@@ -1,25 +1,14 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-import { h, Suspense } from '../../../../node_modules/vue-next/dist/vue.esm.js';
+import { lazy } from './utils.js';
 
-const Greeting = () => import('./Greeting.js');
-
-const AsyncGreeting = {
-  async setup() {
-    return {
-      comp: (await Greeting()).default
-    };
-  },
-  render() {
-    return h(this.comp);
-  }
-};
+const Greeting = lazy(() => import('./Greeting.js'));
 
 export default {
   name: 'App',
   components: {
-    AsyncGreeting
+    Greeting
   },
   data() {
     return {
@@ -32,7 +21,7 @@ export default {
     </button>
     <Suspense v-if="visible">
       <template #default>
-        <AsyncGreeting />
+        <Greeting />
       </template>
       <template #fallback>
         <div>Loading...</div>
