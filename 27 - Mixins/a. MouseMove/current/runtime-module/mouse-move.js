@@ -1,8 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-export default {
-  name: 'mouse-move',
+export const mouseMoveMixin = {
   data() {
     return {
       mousePosition: {
@@ -21,8 +20,5 @@ export default {
   },
   destroyed() {
     document.removeEventListener('mousemove', this.handleMouseMove);
-  },
-  render() {
-    return this.$scopedSlots.default(this.mousePosition);
   }
 };
