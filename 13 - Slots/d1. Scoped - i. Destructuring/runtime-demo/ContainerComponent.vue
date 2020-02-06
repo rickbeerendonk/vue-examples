@@ -2,13 +2,13 @@
 <!-- Copyright © 2019 Rick Beerendonk          -->
 
 <template>
-  <div style="background-color: lightgray; padding: 10px">
+  <div class="container">
     Normal:
-    <div style="background-color: white; padding: 10px">
+    <div class="content">
       <slot name="first" />
     </div>
     Scoped:
-    <div style="background-color: white; padding: 10px">
+    <div class="content">
       <slot name="second" :source="source" />
     </div>
   </div>
@@ -25,4 +25,14 @@ module.exports = {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.container {
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+</style>
