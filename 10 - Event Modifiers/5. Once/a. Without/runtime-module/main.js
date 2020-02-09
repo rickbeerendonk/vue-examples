@@ -6,6 +6,6 @@ import Vue from '../../../../node_modules/vue/dist/vue.esm.browser.js';
 new Vue({
   el: '#app',
   data: {
-    count: 0
+    count: 0 // Will become more than 1
   }
 });
