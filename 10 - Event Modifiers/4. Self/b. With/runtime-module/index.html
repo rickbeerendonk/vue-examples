@@ -15,7 +15,7 @@
       triggered.
     </p>
     <div id="app">
-      <div id="parent" @click.self="parentClicked">
+      <div id="parent" @click.self="parentSelfClicked">
         Parent
         <!-- Order of @click.self and @click matters. -->
         <div id="child" @click.self="childSelfClicked" @click="childClicked">

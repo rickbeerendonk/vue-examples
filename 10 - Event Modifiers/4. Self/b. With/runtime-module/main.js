@@ -9,9 +9,9 @@ new Vue({
     result: []
   },
   methods: {
-    parentClicked: function(event) {
+    parentSelfClicked: function(event) {
       this.result.push(
-        `${event.currentTarget.id} received event for ${event.target.id}.`
+        `${event.currentTarget.id} received event for ${event.target.id} (Self).`
       );
     },
     childClicked: function(event) {
