@@ -11,7 +11,7 @@
   </head>
   <body>
     <div id="app">
-      <input @keyup="changed" ref="input" />
+      <input ref="input" :value="name" @keyup="changed" />
       <h1>Hello {{ name }}!</h1>
     </div>
 

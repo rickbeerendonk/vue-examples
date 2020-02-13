@@ -12,5 +12,10 @@ new Vue({
     // Use $refs to get direct DOM access
     // Useful for focus or selections:
     this.$refs.input.focus();
+  },
+  methods: {
+    changed(e) {
+      this.name = e.target.value;
+    }
   }
 });
