@@ -45,7 +45,6 @@ export default {
 
 <style>
 #result {
-  padding: 4px;
-  background: lightgray;
+  background: bisque;
 }
 </style>

@@ -61,7 +61,7 @@ export default {
         Unknown
       </label>
 
-      <div style="padding: 4px; background: lightgray">
+      <div style="background: bisque">
         <component v-bind:is="greetingLanguage"></component>
       </div>
     </div>

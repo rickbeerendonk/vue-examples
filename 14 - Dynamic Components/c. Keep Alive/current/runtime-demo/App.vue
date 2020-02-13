@@ -53,7 +53,6 @@ module.exports = {
 
 <style scoped>
 #result {
-  padding: 4px;
-  background: lightgray;
+  background: bisque;
 }
 </style>

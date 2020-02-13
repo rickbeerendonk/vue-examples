@@ -37,7 +37,7 @@ export default {
         Spanish
       </label>
 
-      <div style="padding: 4px; background: lightgray">
+      <div style="background: bisque">
         <!-- Cache inactive components -->
         <keep-alive>
           <component :is="greetingLanguage"></component>

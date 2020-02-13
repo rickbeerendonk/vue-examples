@@ -31,7 +31,7 @@ export default {
         Value
       </label>
 
-      <div style="padding: 4px; background: lightgray">
+      <div style="background: bisque">
         <!-- No keep-alive needed! -->
         <component v-bind:is="areaComponent"></component>
       </div>
