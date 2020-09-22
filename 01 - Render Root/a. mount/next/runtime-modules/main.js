@@ -3,18 +3,16 @@
 
 import * as Vue from '../../../../node_modules/vue-next/dist/vue.esm.js';
 
-Vue.createApp().mount(
-  {
-    template: `Hello Vue ${Vue.version}!` // No <div> needed.
-  },
-  '#app1' // <div id="app1"></div>
-);
+console.log(Vue.version);
 
-Vue.createApp().mount(
-  {
-    data: {
+Vue.createApp({
+  template: `Hello Vue ${Vue.version}!` // No <div> needed.
+}).mount('#app1' /* // <div id="app1"></div> */);
+
+Vue.createApp({
+  data() {
+    return {
       greeting: `Hi Vue ${Vue.version}!`
-    }
-  },
-  '#app2' // <div id="app2">{{ greeting }}</div>
-);
+    };
+  }
+}).mount('#app2' /* <div id="app2">{{ greeting }}</div> */);
