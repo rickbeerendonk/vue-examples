@@ -3,8 +3,8 @@
 
 import * as Vue from '../../../../../node_modules/vue-next/dist/vue.esm-browser.js';
 
-import App from './App.js';
+import Greeting from './Greeting.js';
 
 // Bootstrap
-const app = Vue.createApp(App);
+const app = Vue.createApp(Greeting);
 app.mount('#app');

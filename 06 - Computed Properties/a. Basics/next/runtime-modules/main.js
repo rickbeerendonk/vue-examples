@@ -1,18 +1,17 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-import * as Vue from '../../../../node_modules/vue-next/dist/vue.esm.js';
+import * as Vue from '../../../../node_modules/vue-next/dist/vue.esm-browser.js';
 
-Vue.createApp().mount(
-  {
-    data: {
+Vue.createApp({
+  data() {
+    return {
       greeting: 'Hello World!'
-    },
-    computed: {
-      uppercaseGreeting: function() {
-        return this.greeting.toUpperCase();
-      }
-    }
+    };
   },
-  '#app'
-);
+  computed: {
+    uppercaseGreeting: function() {
+      return this.greeting.toUpperCase();
+    }
+  }
+}).mount('#app');

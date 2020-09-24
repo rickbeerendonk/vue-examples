@@ -58,6 +58,6 @@
     "http-vue-loader": "1.4.2",
     "serve": "11.3.0",
     "vue": "2.6.12",
-    "vue-next": "npm:vue@next"
+    "vue-next": "npm:vue@3.0.0"
   }
 }

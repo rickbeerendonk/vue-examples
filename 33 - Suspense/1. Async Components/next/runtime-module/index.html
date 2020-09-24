@@ -6,14 +6,17 @@
     <meta charset="utf-8" />
     <meta name="author" content="Rick Beerendonk" />
 
-    <title>Functional Components - Basics</title>
+    <title>Suspense - Async Components</title>
     <link rel="stylesheet" href="../../../../resources/oblicum.css" />
     <link rel="stylesheet" href="../../../../resources/oblicum-vue3.css" />
   </head>
   <body>
+    <p style="color: gray">
+      Add network latency to see that "Loading..." is shown while the component
+      is loaded.
+    </p>
     <div id="app"></div>
 
-    <script src="../../../../node_modules/http-vue-loader/src/httpVueLoader.js"></script>
     <script type="module" src="main.js"></script>
   </body>
 </html>
