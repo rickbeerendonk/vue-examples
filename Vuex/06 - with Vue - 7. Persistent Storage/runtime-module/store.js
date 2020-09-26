@@ -14,7 +14,7 @@ const stored = localStorage.getItem('store');
 const initialValue = stored
   ? JSON.parse(stored)
   : {
-      name: 'Svelte',
+      name: 'Vue',
       year: 2020
     };
 
