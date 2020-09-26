@@ -10,13 +10,13 @@ export default {
   components: {
     Child
   },
-  data: function() {
+  data: function () {
     return {
       greetingText: 'World'
     };
   },
   methods: {
-    greetingChanged: function(value) {
+    greetingChanged: function (value) {
       this.greetingText = value;
     }
   },

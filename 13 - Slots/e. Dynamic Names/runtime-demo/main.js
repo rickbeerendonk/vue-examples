@@ -16,7 +16,7 @@ new Vue({
     name2: 'second'
   }),
   methods: {
-    handleSwitch: function() {
+    handleSwitch: function () {
       if (this.name1 === 'first') {
         this.name1 = 'second';
         this.name2 = 'first';

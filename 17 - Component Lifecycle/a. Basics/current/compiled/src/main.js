@@ -11,7 +11,7 @@ const vm = new Vue({
 const component = vm.$mount();
 const elem = document.body.appendChild(component.$el);
 
-setTimeout(function() {
+setTimeout(function () {
   vm.$destroy();
   document.body.removeChild(elem);
 }, 500);

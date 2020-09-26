@@ -64,7 +64,7 @@ export default {
     //
     // Note: No guarantee all child components have also been re-rendered.
     //       Use vm.$nextTick inside of updated to wait for all children to be re-rendered:
-    this.$nextTick(function() {
+    this.$nextTick(function () {
       logEvent('updated()', this);
 
       // Update data
@@ -85,19 +85,23 @@ export default {
     // Note: Not called during server-side rendering
     logEvent('deactivated()', this);
   },
-  beforeDestroy() {
+  beforeUnmount() {
     // Called
-    // - before instance is destroyed. In this hook the instance is still fully functional.
+    // - right before a component instance is unmounted. At this stage the instance is still fully functional.
     //
     // Note: Not called during server-side rendering.
-    logEvent('beforeDestroy()', this);
+    logEvent('beforeUnmount()', this);
   },
-  destroyed() {
+  unmounted() {
     // Called
-    // - after instance is destroyed. In this hook the instance is unbound, without children and without event-listeners.
+    // - after a component instance has been unmounted.
+    //   When this hook is called:
+    //   - all directives of the component instance have been unbound,
+    //   - all event listeners have been removed,
+    //   - all child component instance have also been unmounted.
     //
     // Note: Not called during server-side rendering.
-    logEvent('destroyed()', this);
+    logEvent('unmounted()', this);
   }
 };
 </script>

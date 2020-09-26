@@ -11,7 +11,7 @@ const Greeting = {
 
 new Vue({
   el: '#app',
-  render: function(createElement) {
+  render: function (createElement) {
     return createElement(
       Greeting, // tag name
       {

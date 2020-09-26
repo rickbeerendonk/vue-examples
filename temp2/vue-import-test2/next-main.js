@@ -1,7 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-import * as Vue from 'https://unpkg.com/vue@next/dist/vue.esm.js';
+import * as Vue from 'https://unpkg.com/vue@next/dist/vue.esm-browser.js';
 
 import vueLoader from './vue-loader.js';
 
@@ -10,5 +10,5 @@ import vueLoader from './vue-loader.js';
 (async () => {
   const App = await vueLoader('./App.vue')();
 
-  Vue.createApp().mount(App, '#app');
+  Vue.createApp(App).mount('#app');
 })();

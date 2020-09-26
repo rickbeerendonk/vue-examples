@@ -10,4 +10,4 @@ const rootElement = document.createElement('div');
 document.body.appendChild(rootElement);
 
 // Bootstrap
-Vue.createApp().mount(App, rootElement);
+Vue.createApp(App).mount(rootElement);

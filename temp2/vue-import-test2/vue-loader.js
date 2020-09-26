@@ -49,7 +49,7 @@ class StyleContext extends ElemContext {
 
       const scopedSelectors = [];
 
-      rule.selectorText.split(/\s*,\s*/).forEach(function(sel) {
+      rule.selectorText.split(/\s*,\s*/).forEach(function (sel) {
         scopedSelectors.push(scopeName + ' ' + sel);
         const segments = sel.match(/([^ :]+)(.+)?/);
         scopedSelectors.push(segments[1] + scopeName + (segments[2] || ''));
@@ -102,11 +102,11 @@ class ScriptContext extends ElemContext {
   }
 
   compile() {
-    const childModuleRequire = function(childURL) {
+    const childModuleRequire = function (childURL) {
       return vueLoader.require(resolveURL(this.component.baseURI, childURL));
     }.bind(this);
 
-    const childLoader = function(childURL, childName) {
+    const childLoader = function (childURL, childName) {
       return vueLoader(resolveURL(this.component.baseURI, childURL), childName);
     }.bind(this);
 
@@ -136,7 +136,7 @@ class ScriptContext extends ElemContext {
     return Promise.resolve(this.module.exports)
       .then(vueLoader.scriptExportsHandler.bind(this))
       .then(
-        function(exports) {
+        function (exports) {
           this.module.exports = exports;
         }.bind(this)
       );
@@ -225,7 +225,7 @@ class Component {
     } else {
       p = vueLoader
         .httpRequest(elemContext.elem.getAttribute('src'))
-        .then(function(content) {
+        .then(function (content) {
           elemContext.elem.removeAttribute('src');
           return content;
         });
@@ -233,7 +233,7 @@ class Component {
 
     return p
       .then(
-        function(content) {
+        function (content) {
           if (elemContext !== null && elemContext.elem.hasAttribute('lang')) {
             const lang = elemContext.elem.getAttribute('lang');
             elemContext.elem.removeAttribute('lang');
@@ -245,7 +245,7 @@ class Component {
           return content;
         }.bind(this)
       )
-      .then(function(content) {
+      .then(function (content) {
         if (content !== null) {
           elemContext.content = content;
         }
@@ -263,7 +263,7 @@ class Component {
         this.styles.map(this._normalizeSection)
       )
     ).then(
-      function() {
+      function () {
         return this;
       }.bind(this)
     );
@@ -277,12 +277,12 @@ class Component {
       Array.prototype.concat(
         this.template && this.template.compile(),
         this.script && this.script.compile(),
-        this.styles.map(function(style) {
+        this.styles.map(function (style) {
           return style.compile();
         })
       )
     ).then(
-      function() {
+      function () {
         return this;
       }.bind(this)
     );
@@ -311,8 +311,8 @@ function parseComponentURL(url) {
  * @param {string} url
  * @param {string=} name
  */
-vueLoader.load = function(url, name) {
-  return function() {
+vueLoader.load = function (url, name) {
+  return function () {
     return new Component(name)
       .load(url)
       .then(component => component.normalize())
@@ -334,14 +334,14 @@ vueLoader.load = function(url, name) {
   };
 };
 
-vueLoader.register = function(Vue, url) {
+vueLoader.register = function (Vue, url) {
   const comp = parseComponentURL(url);
   Vue.component(comp.name, vueLoader.load(comp.url));
 };
 
-vueLoader.install = function(Vue) {
+vueLoader.install = function (Vue) {
   Vue.mixin({
-    beforeCreate: function() {
+    beforeCreate: function () {
       const urlPrefix = 'url:';
       const components = this.$options.components;
 
@@ -375,11 +375,11 @@ vueLoader.install = function(Vue) {
   });
 };
 
-vueLoader.require = function(moduleName) {
+vueLoader.require = function (moduleName) {
   return window[moduleName];
 };
 
-vueLoader.httpRequest = function(url) {
+vueLoader.httpRequest = function (url) {
   return fetch(url).then(response => {
     if (!response.ok) {
       throw Error(`${response.status} (${response.statusText})`);

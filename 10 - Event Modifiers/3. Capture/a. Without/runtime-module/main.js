@@ -9,15 +9,15 @@ new Vue({
     result: []
   },
   methods: {
-    parentAtTargetClicked: function(event) {
+    parentAtTargetClicked: function (event) {
       this.result.push(`${event.target.id} received event in at target fase.`);
     },
-    parentBubblingClicked: function(event) {
+    parentBubblingClicked: function (event) {
       this.result.push(
         `${event.currentTarget.id} received event for ${event.target.id} in bubbling fase.`
       );
     },
-    childClicked: function(event) {
+    childClicked: function (event) {
       this.result.push(`${event.target.id} received event.`);
     }
   }

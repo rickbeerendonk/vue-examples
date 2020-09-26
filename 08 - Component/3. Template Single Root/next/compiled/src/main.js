@@ -11,4 +11,4 @@ rootElement.setAttribute('id', 'app');
 document.body.appendChild(rootElement);
 
 // Bootstrap
-Vue.createApp().mount(App, rootElement);
+Vue.createApp(App).mount(rootElement);

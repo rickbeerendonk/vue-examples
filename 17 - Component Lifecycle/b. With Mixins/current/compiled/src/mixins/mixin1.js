@@ -44,7 +44,7 @@ export default {
     //
     // Note: No guarantee all child components have also been re-rendered.
     //       Use vm.$nextTick inside of updated to wait for all children to be re-rendered:
-    this.$nextTick(function() {
+    this.$nextTick(function () {
       logEvent('mixin1', 'updated()', this);
 
       // Update data

@@ -22,7 +22,7 @@ export default {
     name: 'World'
   }),
   methods: {
-    changed: function(e) {
+    changed: function (e) {
       this.name = e.target.value;
     }
   }

@@ -14,7 +14,7 @@
 module.exports = {
   name: 'GreetingComponent',
   props: ['initialName'],
-  data: function() {
+  data: function () {
     return {
       name: this.initialName
     };

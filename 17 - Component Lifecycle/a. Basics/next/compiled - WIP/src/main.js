@@ -27,10 +27,10 @@ const rootElement = document.createElement('div');
 const elem = document.body.appendChild(rootElement);
 
 // Bootstrap
-const element = createApp();
-element.mount(App, rootElement);
+const element = createApp(App);
+element.mount(rootElement);
 
-setTimeout(function() {
+setTimeout(function () {
   // debugger;
   // element.destroy();
   // x.destroy();

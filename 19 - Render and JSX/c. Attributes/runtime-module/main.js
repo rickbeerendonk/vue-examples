@@ -5,7 +5,7 @@ import Vue from '../../../../node_modules/vue/dist/vue.esm.browser.js';
 
 new Vue({
   el: '#app',
-  render: function(createElement) {
+  render: function (createElement) {
     return createElement(
       'a', // tag name
       {

@@ -10,12 +10,12 @@ new Vue({
     count2: 0
   },
   computed: {
-    computedCount1: function() {
+    computedCount1: function () {
       return Date.now() + this.count1 - this.count1;
     }
   },
   methods: {
-    methodCount1: function() {
+    methodCount1: function () {
       return Date.now() + this.count1 - this.count1;
     }
   }

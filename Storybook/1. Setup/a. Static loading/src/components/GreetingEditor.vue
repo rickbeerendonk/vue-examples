@@ -22,7 +22,7 @@ export default {
     name: 'World'
   }),
   methods: {
-    changed: function(value) {
+    changed: function (value) {
       this.name = value;
     }
   }

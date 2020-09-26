@@ -15,7 +15,7 @@ export default {
     }
   },
   methods: {
-    changed: function(e) {
+    changed: function (e) {
       this.$emit('change', e.target.value);
     }
   }

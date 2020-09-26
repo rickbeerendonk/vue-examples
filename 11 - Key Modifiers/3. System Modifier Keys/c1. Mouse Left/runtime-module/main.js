@@ -9,7 +9,7 @@ new Vue({
     result: []
   },
   methods: {
-    mousedown: function(event) {
+    mousedown: function (event) {
       this.result.push(
         `button: ${event.button}, (ctrlKey: ${event.ctrlKey}, shiftKey  ${event.shiftKey}, altKey: ${event.altKey}, metaKey: ${event.metaKey})`
       );

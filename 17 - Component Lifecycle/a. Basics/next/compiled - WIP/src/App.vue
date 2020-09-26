@@ -34,7 +34,7 @@ export default {
     }
   },
   mounted() {
-    this.$nextTick(function() {
+    this.$nextTick(function () {
       // After the entire view has been rendered
       this.name = 'B';
     });

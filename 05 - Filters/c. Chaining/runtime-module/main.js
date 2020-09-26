@@ -6,17 +6,14 @@ import Vue from '../../../node_modules/vue/dist/vue.esm.browser.js';
 new Vue({
   el: '#app',
   filters: {
-    reverse: function(value) {
+    reverse: function (value) {
       if (!value) {
         return '';
       }
 
-      return value
-        .split('')
-        .reverse()
-        .join('');
+      return value.split('').reverse().join('');
     },
-    titlecase: function(value) {
+    titlecase: function (value) {
       if (!value) {
         return '';
       }

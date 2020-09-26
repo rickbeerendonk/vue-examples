@@ -14,15 +14,11 @@
     }
   },
   "plugins": ["vue", "prettier"],
-  "extends": [
-    "eslint:recommended",
-    "plugin:vue/recommended",
-    "plugin:prettier/recommended",
-    "prettier/vue"
-  ],
+  "extends": ["eslint:recommended", "plugin:vue/recommended", "prettier/vue"],
   "rules": {
     "no-debugger": 1,
     "semi": [2, "always"],
+    "prettier/prettier": "error",
     "vue/require-prop-types": 1
   }
 }

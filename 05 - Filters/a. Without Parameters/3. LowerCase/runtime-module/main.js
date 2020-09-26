@@ -6,7 +6,7 @@ import Vue from '../../../../node_modules/vue/dist/vue.esm.browser.js';
 new Vue({
   el: '#app',
   filters: {
-    lowercase: function(value) {
+    lowercase: function (value) {
       if (!value) {
         return '';
       }

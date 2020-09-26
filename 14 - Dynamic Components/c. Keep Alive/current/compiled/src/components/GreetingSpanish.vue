@@ -3,7 +3,7 @@
 
 <template>
   <div>
-    <label>Spanish: <input v-model="greeting"/></label>
+    <label>Spanish: <input v-model="greeting" /></label>
     <p>Hola {{ greeting }}</p>
   </div>
 </template>
