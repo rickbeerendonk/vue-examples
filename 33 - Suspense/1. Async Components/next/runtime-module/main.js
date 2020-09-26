@@ -6,9 +6,4 @@ import { createApp } from '../../../../node_modules/vue-next/dist/vue.esm-browse
 import App from './App.js';
 
 // Bootstrap
-createApp({
-  components: {
-    app: App
-  },
-  template: '<app />'
-}).mount('#app');
+createApp(App).mount('#app');

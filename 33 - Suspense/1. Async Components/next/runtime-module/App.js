@@ -1,9 +1,9 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-import { lazy } from './utils.js';
+import { defineAsyncComponent } from '../../../../node_modules/vue-next/dist/vue.esm-browser.js';
 
-const Greeting = lazy(() => import('./Greeting.js'));
+const Greeting = defineAsyncComponent(() => import('./Greeting.js'));
 
 export default {
   name: 'App',
