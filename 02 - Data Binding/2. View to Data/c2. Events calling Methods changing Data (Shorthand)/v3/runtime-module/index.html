@@ -8,12 +8,13 @@
 
     <title>
       Data Binding - View to Data - Events calling Methods changing Data
+      (Shorthand)
     </title>
-    <link rel="stylesheet" href="../../../../resources/oblicum.css" />
+    <link rel="stylesheet" href="../../../../../resources/oblicum.css" />
   </head>
   <body>
     <div id="app">
-      <h1 v-on:click="clicked">This has been clicked {{count}} times!</h1>
+      <h1 @click="clicked">This has been clicked {{count}} times!</h1>
     </div>
 
     <script type="module" src="main.js"></script>
