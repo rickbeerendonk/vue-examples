@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2019 Rick Beerendonk -->
+<!-- Copyright © 2018 Rick Beerendonk -->
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="author" content="Rick Beerendonk" />
 
-    <title>
-      Data Binding - View to Data - Events calling Methods - Dynamic
-    </title>
-    <link rel="stylesheet" href="../../../../resources/oblicum.css" />
+    <title>Data Binding - View to Data - Events calling Methods</title>
+    <link rel="stylesheet" href="../../../../../resources/oblicum.css" />
   </head>
   <body>
     <div id="app">
-      <h1 v-on:[dynamicevent]="clicked">Hello World!</h1>
+      <h1 v-on:click="clicked">Hello World!</h1>
     </div>
 
     <script type="module" src="main.js"></script>
