@@ -11,11 +11,26 @@
   </head>
   <body>
     <div id="app">
-      <span
-        v-bind:style="{ 'font-size': fontSize + 'px', 'font-style': fontStyle, 'text-decoration': textDecoration }"
+      <!-- kebab-case -->
+      <p
+        v-bind:style="{
+          'font-size': fontSize + 'px', 
+          'font-style': fontStyle, 
+          'text-decoration': textDecoration 
+        }"
       >
         Hello Vue!
-      </span>
+      </p>
+      <!-- camelCase -->
+      <p
+        v-bind:style="{ 
+          fontSize: fontSize + 'px', 
+          fontStyle: fontStyle, 
+          textDecoration: textDecoration 
+        }"
+      >
+        Hello Vue!
+      </p>
     </div>
 
     <script type="module" src="main.js"></script>
