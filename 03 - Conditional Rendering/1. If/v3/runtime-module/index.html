@@ -6,13 +6,13 @@
     <meta charset="utf-8" />
     <meta name="author" content="Rick Beerendonk" />
 
-    <title>Conditional Rendering - Else</title>
-    <link rel="stylesheet" href="../../../resources/oblicum.css" />
+    <title>Conditional Rendering - If</title>
+    <link rel="stylesheet" href="../../../../resources/oblicum.css" />
   </head>
   <body>
     <div id="app">
-      <span v-if="show">Invisible (not rendered!)</span>
-      <span v-else>Visible</span>
+      <span v-if="show">Visible</span>
+      <span v-if="!show">Invisible (not rendered!)</span>
     </div>
 
     <script type="module" src="main.js"></script>

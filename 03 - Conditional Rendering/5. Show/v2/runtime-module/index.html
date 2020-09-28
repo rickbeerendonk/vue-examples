@@ -6,15 +6,13 @@
     <meta charset="utf-8" />
     <meta name="author" content="Rick Beerendonk" />
 
-    <title>Conditional Rendering - Else-If</title>
-    <link rel="stylesheet" href="../../../resources/oblicum.css" />
+    <title>Conditional Rendering - Show</title>
+    <link rel="stylesheet" href="../../../../resources/oblicum.css" />
   </head>
   <body>
     <div id="app">
-      <span v-if="language === 'en'">English</span>
-      <span v-else-if="language === 'es'">Español</span>
-      <span v-else-if="language === 'nl'">Nederlands</span>
-      <span v-else>Unknown</span>
+      <span v-show="show">Visible</span>
+      <span v-show="!show">Invisible (but rendered!)</span>
     </div>
 
     <script type="module" src="main.js"></script>
