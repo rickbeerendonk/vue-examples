@@ -6,7 +6,7 @@
 export default {
   name: 'GreetingComponent',
   props: ['initialName'],
-  data: function () {
+  data() {
     return {
       name: this.initialName
     };
