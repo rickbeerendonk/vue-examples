@@ -4,7 +4,7 @@
 
 For asynchronous or expensive operations in response to data changes.
 
-Note: watch() can have side effects, but avoid them in computed().
+Note: watch() can have side effects, but avoid side effects in computed().
 
 ## Licence
 
