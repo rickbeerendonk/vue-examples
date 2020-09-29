@@ -11,7 +11,7 @@ Vue.createApp({
   },
   methods: {
     overwrite1() {
-      // WRONG in Vue Next (Vue 3), was right,
+      // WRONG in Vue 3, was right,
       // because it uses Proxies (this here is a Proxy):
       //console.log(this);
 
@@ -25,7 +25,7 @@ Vue.createApp({
       this.items = [itemId++, ...rest];
     },
     overwrite4() {
-      // RIGHT Vue Next (Vue 3), was wrong,
+      // RIGHT Vue Vue 3, was wrong,
       // because it uses Proxies (this here is a Proxy):
       //console.log(this);
 
