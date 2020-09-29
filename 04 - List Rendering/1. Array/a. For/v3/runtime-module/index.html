@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2018 Rick Beerendonk -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rick Beerendonk" />
+
+    <title>List Rendering - Array - For</title>
+    <link rel="stylesheet" href="../../../../../resources/oblicum.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- in -->
+      <ul>
+        <li v-for="item in items">{{ item }}</li>
+      </ul>
+
+      <!-- of (equal as in, but closer to for-of in EcmaScript) -->
+      <ol>
+        <li v-for="item of items">{{ item }}</li>
+      </ol>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
