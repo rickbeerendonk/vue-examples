@@ -1,5 +1,9 @@
 # Filters
 
+## Support
+
+Vue 2 only: https://v3.vuejs.org/guide/migration/filters.html
+
 ## Filter without Parameter
 
 Template:
@@ -72,7 +76,7 @@ Template:
 ## Other frameworks
 
 - **Angular** calls them _Pipes_
-- **React** uses plain JavaScript.
+- **React**, **Svelte** and **Vue 3+** all use plain JavaScript
 
 ## Licence
 
