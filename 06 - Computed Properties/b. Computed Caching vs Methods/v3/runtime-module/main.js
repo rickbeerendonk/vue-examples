@@ -1,13 +1,14 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2019 Rick Beerendonk          !*/
 
-import Vue from '../../../node_modules/vue_2/dist/vue.esm.browser.js';
+import * as Vue from '../../../../node_modules/vue_3/dist/vue.esm-browser.js';
 
-new Vue({
-  el: '#app',
-  data: {
-    count1: 0,
-    count2: 0
+Vue.createApp({
+  data() {
+    return {
+      count1: 0,
+      count2: 0
+    };
   },
   computed: {
     computedCount1: function () {
@@ -19,4 +20,4 @@ new Vue({
       return Date.now() + this.count1 - this.count1;
     }
   }
-});
+}).mount('#app');
