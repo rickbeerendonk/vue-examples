@@ -7,16 +7,16 @@
     <meta name="author" content="Rick Beerendonk" />
 
     <title>List Rendering - Object - Add Property Issue</title>
-    <link rel="stylesheet" href="../../../../resources/oblicum.css" />
+    <link rel="stylesheet" href="../../../../../resources/oblicum.css" />
   </head>
   <body>
     <div id="app">
+      <button @click="add1">Add property (right in Vue 2)</button>
+      <button @click="add2">Add property (wrong in Vue 3)</button>
+
       <ul>
         <li v-for="value in obj">{{ value }}</li>
       </ul>
-
-      <button @click="addRight">Add property (right)</button>
-      <button @click="addWrong">Add property (wrong)</button>
     </div>
 
     <script type="module" src="main.js"></script>

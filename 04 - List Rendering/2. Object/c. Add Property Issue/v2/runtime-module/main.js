@@ -1,7 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-import Vue from '../../../../node_modules/vue_2/dist/vue.esm.browser.js';
+import Vue from '../../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 let itemId = 4;
 
@@ -15,10 +15,10 @@ new Vue({
     }
   },
   methods: {
-    addRight() {
+    add1() {
       this.$set(this.obj, `prop ${itemId}`, itemId++);
     },
-    addWrong() {
+    add2() {
       this.obj[itemId] = itemId++;
     }
   }

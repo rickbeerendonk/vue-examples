@@ -6,13 +6,13 @@
     <meta charset="utf-8" />
     <meta name="author" content="Rick Beerendonk" />
 
-    <title>List Rendering - Object - For</title>
-    <link rel="stylesheet" href="../../../../resources/oblicum.css" />
+    <title>List Rendering - Array - For with Property Name</title>
+    <link rel="stylesheet" href="../../../../../resources/oblicum.css" />
   </head>
   <body>
     <div id="app">
       <ul>
-        <li v-for="value in object">{{ value }}</li>
+        <li v-for="(value, prop) in object">{{ prop }} = {{ value }}</li>
       </ul>
     </div>
 
