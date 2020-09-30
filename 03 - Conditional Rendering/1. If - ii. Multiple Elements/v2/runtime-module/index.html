@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2018 Rick Beerendonk -->
+<!-- Copyright © 2020 Rick Beerendonk -->
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="author" content="Rick Beerendonk" />
 
-    <title>Conditional Rendering - If</title>
+    <title>Conditional Rendering - If - Multiple Elements</title>
     <link rel="stylesheet" href="../../../../resources/oblicum.css" />
     <link rel="stylesheet" href="../../../../resources/oblicum-vue2.css" />
   </head>
   <body>
     <div id="app">
-      <span v-if="show">Visible</span>
-      <span v-if="!show">Invisible (not rendered!)</span>
+      <template v-if="show">
+        <p>Visible</p>
+        <p>Also Visible</p>
+      </template>
+      <template v-if="!show">
+        <p>Invisible (not rendered!)</p>
+        <p>Also Invisible</p>
+      </template>
     </div>
 
     <script type="module" src="main.js"></script>
