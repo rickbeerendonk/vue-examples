@@ -12,14 +12,14 @@ export default {
   },
   data() {
     return {
-      count: 0
+      id: 0
     };
   },
   template: `
     <div>
-      <button @click="count++">Click me!</button>
+      <button @click="id++">Change ID</button>
       <br />
-      <ClickMe :key="count" />
+      <ClickMe :key="id" />
     </div>
   `
 };
