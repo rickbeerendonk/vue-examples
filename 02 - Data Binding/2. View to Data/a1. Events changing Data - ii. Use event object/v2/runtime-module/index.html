@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2018 Rick Beerendonk -->
+<!-- Copyright © 2020 Rick Beerendonk -->
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="author" content="Rick Beerendonk" />
 
-    <title>Data Binding - View to Data - Events changing Data</title>
+    <title>
+      Data Binding - View to Data - Events changing Data - Use event object
+    </title>
     <link rel="stylesheet" href="../../../../../resources/oblicum.css" />
     <link rel="stylesheet" href="../../../../../resources/oblicum-vue2.css" />
   </head>
   <body>
     <div id="app">
-      <h1 v-on:click="count++">This has been clicked {{count}} times!</h1>
+      <input v-on:input="name = $event.target.value" />
+      {{ name }}
     </div>
 
     <script type="module" src="main.js"></script>
