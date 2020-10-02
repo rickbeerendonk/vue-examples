@@ -17,14 +17,14 @@ export default {
       required: false
     }
   },
+  // Lifecycle Hooks
+  setup() {
+    logEvent('setup()', this);
+  },
   data() {
     return {
       count: 0
     };
-  },
-  // Lifecycle Hooks
-  setup() {
-    logEvent('setup()', this);
   },
   beforeCreate() {
     // Called synchronously

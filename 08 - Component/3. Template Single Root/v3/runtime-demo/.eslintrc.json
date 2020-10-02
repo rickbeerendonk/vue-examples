@@ -19,6 +19,7 @@
     "no-debugger": 1,
     "semi": [2, "always"],
     "vue/require-prop-types": 1,
-    "vue/valid-template-root": 1
+    "vue/valid-template-root": 1,
+    "vue/no-multiple-template-root": 1
   }
 }

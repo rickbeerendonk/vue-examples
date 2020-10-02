@@ -37,11 +37,11 @@
     "babel-loader": "8.1.0",
     "copy-webpack-plugin": "6.1.1",
     "css-loader": "4.3.0",
-    "eslint": "7.9.0",
+    "eslint": "7.10.0",
     "eslint-config-prettier": "6.12.0",
     "eslint-loader": "4.0.2",
     "eslint-plugin-prettier": "3.1.4",
-    "eslint-plugin-vue": "6.2.2",
+    "eslint-plugin-vue": "7.0.0",
     "html-webpack-plugin": "4.5.0",
     "husky": "4.3.0",
     "prettier": "2.1.2",
@@ -55,10 +55,10 @@
   "dependencies": {
     "http-vue-loader": "1.4.2",
     "serve": "11.3.2",
+    "vue-router_3": "npm:vue-router@3.4.5",
+    "vue-router_4": "npm:vue-router@4.0.0-beta.13",
     "vue_2": "npm:vue@2.6.12",
     "vue_3": "npm:vue@3.0.0",
-    "vue-router_3": "npm:vue-router@3.4.4",
-    "vue-router_4": "npm:vue-router@4.0.0-beta.12",
     "vuex_3": "npm:vuex@3.5.1",
     "vuex_4": "npm:vuex@4.0.0-beta.4"
   }

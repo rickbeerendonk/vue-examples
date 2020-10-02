@@ -1,0 +1,5 @@
+{
+  "rules": {
+    "vue/no-arrow-functions-in-watch": 0
+  }
+}

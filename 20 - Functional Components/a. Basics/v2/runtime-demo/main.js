@@ -11,13 +11,13 @@ new Vue({
   el: '#app',
   // Register component locally
   components: {
-    greeting: Greeting,
-    greetingfc: GreetingFC
+    Greeting,
+    GreetingFC
   },
   template: `
     <div>
-      <greeting />
-      <greetingfc />
+      <Greeting />
+      <GreetingFC />
     </div>
   `
 });
