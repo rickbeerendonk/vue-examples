@@ -6,7 +6,7 @@ export default {
   template: `
     <div>
       <img
-        src="../../../../resources/oblicum-square.svg"
+        src="../../../../../resources/oblicum-square.svg"
         class="oblicum-spinner"
         alt="Fetching..."
       />
