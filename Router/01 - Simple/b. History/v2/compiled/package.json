@@ -21,7 +21,6 @@
     "html-webpack-plugin": "4.5.0",
     "vue-eslint-parser": "7.1.0",
     "vue-loader": "15.9.3",
-    "vue-router": "3.4.5",
     "vue-template-compiler": "2.6.12",
     "webpack": "4.44.2",
     "webpack-cli": "3.3.12",
@@ -29,6 +28,7 @@
   },
   "dependencies": {
     "http-vue-loader": "1.4.2",
+    "vue-router": "3.4.5",
     "vue": "2.6.12"
   },
   "scripts": {
