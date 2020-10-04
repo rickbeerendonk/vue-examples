@@ -8,7 +8,10 @@ import * as Vue from '../../../../../../node_modules/vue_3/dist/vue.esm-browser.
   const GreetingComponent = await httpVueLoader('./GreetingComponent.vue')();
 
   // Bootstrap
-  const app = Vue.createApp({});
-  app.component('greeting-component', GreetingComponent);
+  const app = Vue.createApp({
+    components: {
+      'greeting-component': GreetingComponent
+    }
+  });
   app.mount('#app');
 })();
