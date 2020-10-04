@@ -6,12 +6,14 @@
     <meta charset="utf-8" />
     <meta name="author" content="Rick Beerendonk" />
 
-    <title>Data Binding - Data to View - Content - Mustache</title>
+    <title>Data Binding - Data to View - Content - Partial</title>
     <link rel="stylesheet" href="../../../../../resources/oblicum.css" />
     <link rel="stylesheet" href="../../../../../resources/oblicum-vue3.css" />
   </head>
   <body>
-    <div id="app">{{ greeting }}</div>
+    <div id="app">
+      <span>Greeting: {{ greeting }}</span>
+    </div>
 
     <script type="module" src="main.js"></script>
   </body>
