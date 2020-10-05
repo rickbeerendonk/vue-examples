@@ -3,9 +3,9 @@
 
 import { createRouter, createWebHistory } from 'vue-router';
 
-const Home = { template: '<h2>Home</h2>' };
-const Page1 = { template: '<h2>Page 1</h2>' };
-const Page2 = { template: '<h2>Page 2</h2>' };
+import Home from '../components/Home.vue';
+import Page1 from '../components/Page1.vue';
+import Page2 from '../components/Page2.vue';
 
 const router = createRouter({
   // Use HTML5 history mode
