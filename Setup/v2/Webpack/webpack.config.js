@@ -27,7 +27,7 @@ module.exports = {
       {
         enforce: 'pre',
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: file => /node_modules/.test(file) && !/\.vue\.js/.test(file),
         loader: 'eslint-loader'
       },
       {
@@ -55,6 +55,6 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   resolve: {
-    extensions: ['.js', '.jsx', '.json', '.mjs']
+    extensions: ['*', '.js', '.jsx', '.json', '.mjs', '.vue']
   }
 };
