@@ -20,7 +20,7 @@ const ImportantAnchor = httpVueLoader('./ImportantAnchor.vue');
 module.exports = {
   name: 'App',
   components: {
-    ImportantAnchor
+    importantanchor: ImportantAnchor
   }
 };
 </script>

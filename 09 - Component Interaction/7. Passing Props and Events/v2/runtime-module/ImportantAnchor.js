@@ -5,5 +5,5 @@ export default {
   name: 'ImportantAnchor',
   // Disable attribute inheritence: https://vuejs.org/v2/guide/components-props.html#Disabling-Attribute-Inheritance
   inheritAttrs: false,
-  template: '<a v-bind="$attrs" v-on="$listeners"><slot></slot</a>'
+  template: '<a v-bind="$attrs" v-on="$listeners">!!! <slot></slot> !!!</a>'
 };

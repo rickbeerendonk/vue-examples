@@ -2,7 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk          -->
 
 <template>
-  <a v-bind="$attrs" v-on="$listeners"><slot></slot></a>
+  <a v-bind="$attrs" v-on="$listeners">!!! <slot></slot> !!!</a>
 </template>
 
 <script>
