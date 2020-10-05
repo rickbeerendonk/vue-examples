@@ -14,9 +14,9 @@ new Vue({
     },
     // kebab-case
     styleKebab: {
-      ['font-size']: '48px',
-      ['font-style']: 'italic',
-      ['text-decoration']: 'underline'
+      'font-size': '48px',
+      'font-style': 'italic',
+      'text-decoration': 'underline'
     }
   }
 });
