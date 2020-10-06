@@ -3,7 +3,7 @@
 
 <template>
   <div id="app">
-    <Greeting name="Vue" />
+    <greeting name="Vue" />
   </div>
 </template>
 
