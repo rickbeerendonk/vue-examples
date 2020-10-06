@@ -5,6 +5,7 @@
   <div>
     <input v-model="name" />
     <h1>Hello {{ name }}!</h1>
+    <p>InitialName: {{ initialName }}</p>
   </div>
 </template>
 
