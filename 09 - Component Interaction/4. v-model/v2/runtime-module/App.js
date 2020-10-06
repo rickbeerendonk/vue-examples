@@ -15,6 +15,11 @@ export default {
       greetingText: 'World'
     };
   },
+  // Short for:
+  //  <child
+  //    v-bind:value="greetingText"
+  //    v-on:input="greetingText = $event">
+  //  </child>
   template: `
     <div>
       <Child v-model="greetingText" />

@@ -4,6 +4,13 @@
 <template>
   <div>
     <child v-model="greetingText"></child>
+    <!--
+      Short for:
+      <child 
+        v-bind:value="greetingText" 
+        v-on:input="greetingText = $event">
+      </child>
+    -->
     <h1>Hello {{ greetingText }}</h1>
   </div>
 </template>
