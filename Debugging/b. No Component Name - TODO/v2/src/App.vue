@@ -3,7 +3,7 @@
 
 <template>
   <div id="app">
-    <GreetingEditor value="Vue" />
+    <greeting-editor value="Vue" />
   </div>
 </template>
 
