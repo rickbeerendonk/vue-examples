@@ -47,6 +47,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin({ patterns: [{ from: 'public' }] }),
     new HtmlWebpackPlugin({
+      favicon: './public/favicon.ico',
       template: './public/index.html',
       title: 'Setup - Webpack'
     }),
