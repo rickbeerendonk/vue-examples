@@ -4,8 +4,8 @@
 <template>
   <div>
     <h1>App</h1>
-    <ComponentA></ComponentA>
-    <ComponentB></ComponentB>
+    <component-a></component-a>
+    <component-b></component-b>
   </div>
 </template>
 
@@ -19,8 +19,8 @@ const ComponentB = httpVueLoader('./ComponentB.vue');
 module.exports = {
   name: 'App',
   components: {
-    componenta: ComponentA,
-    componentb: ComponentB
+    ComponentA,
+    ComponentB
   }
 };
 </script>

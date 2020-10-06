@@ -12,6 +12,6 @@ Vue.config.performance = true;
 new Vue({
   el: '#app',
   components: {
-    'greeting-component': GreetingComponent
+    GreetingComponent
   }
 });

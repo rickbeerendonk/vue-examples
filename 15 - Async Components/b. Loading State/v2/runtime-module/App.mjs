@@ -23,10 +23,10 @@ function createAsyncComponent(module) {
 export default {
   name: 'App',
   components: {
-    'greeting-dutch': createAsyncComponent('./GreetingDutch.mjs'),
-    'greeting-english': createAsyncComponent('./GreetingEnglish.mjs'),
-    'greeting-spanish': createAsyncComponent('./GreetingSpanish.mjs'),
-    'greeting-unknown': createAsyncComponent('./does-not-exists')
+    GreetingDutch: createAsyncComponent('./GreetingDutch.mjs'),
+    GreetingEnglish: createAsyncComponent('./GreetingEnglish.mjs'),
+    GreetingSpanish: createAsyncComponent('./GreetingSpanish.mjs'),
+    GreetingUnknown: createAsyncComponent('./does-not-exists')
   },
   data() {
     return {

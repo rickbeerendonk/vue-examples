@@ -11,5 +11,5 @@ const app = Vue.createApp({});
 // Enable component init, compile, render and patch performance tracing.
 app.config.performance = true;
 
-app.component('greeting-component', GreetingComponent);
+app.component('GreetingComponent', GreetingComponent);
 app.mount('#app');

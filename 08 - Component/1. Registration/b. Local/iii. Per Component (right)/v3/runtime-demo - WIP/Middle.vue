@@ -16,7 +16,7 @@
   module.exports = {
     name: 'Middle',
     components: {
-      bottom: Bottom
+      Bottom
     }
   };
 })();

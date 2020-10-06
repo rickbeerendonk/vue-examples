@@ -9,6 +9,6 @@ import ContainerComponent from './ContainerComponent.js';
 new Vue({
   el: '#app',
   components: {
-    'container-component': ContainerComponent
+    ContainerComponent
   }
 });

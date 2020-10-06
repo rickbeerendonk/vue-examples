@@ -16,8 +16,8 @@ const Middle = httpVueLoader('./Middle.vue');
 module.exports = {
   name: 'Top',
   components: {
-    bottom: Bottom,
-    middle: Middle
+    Bottom,
+    Middle
   }
 };
 </script>

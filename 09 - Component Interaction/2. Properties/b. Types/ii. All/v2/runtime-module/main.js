@@ -9,6 +9,6 @@ import MyComponent from './MyComponent.js';
 new Vue({
   el: '#app',
   components: {
-    'my-component': MyComponent
+    MyComponent
   }
 });

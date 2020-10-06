@@ -9,7 +9,7 @@ import App from './App.mjs';
 new Vue({
   el: '#app',
   components: {
-    app: App
+    App
   },
   template: '<app />'
 });

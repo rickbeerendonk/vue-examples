@@ -13,7 +13,7 @@ new Vue({
   el: '#app',
   name: 'App',
   components: {
-    'greeting-component': GreetingComponent
+    GreetingComponent
   },
   data: {
     count: 0

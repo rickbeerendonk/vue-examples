@@ -8,7 +8,7 @@ const GreetingComponent = httpVueLoader('./GreetingComponent.vue');
 new Vue({
   el: '#app',
   components: {
-    'greeting-component': GreetingComponent
+    GreetingComponent
   },
   template: `
     <div>

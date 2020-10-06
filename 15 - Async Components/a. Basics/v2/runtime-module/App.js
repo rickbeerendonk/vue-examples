@@ -4,9 +4,9 @@
 export default {
   name: 'App',
   components: {
-    'greeting-dutch': () => import('./GreetingDutch.js'),
-    'greeting-english': () => import('./GreetingEnglish.js'),
-    'greeting-spanish': () => import('./GreetingSpanish.js')
+    GreetingDutch: () => import('./GreetingDutch.js'),
+    GreetingEnglish: () => import('./GreetingEnglish.js'),
+    GreetingSpanish: () => import('./GreetingSpanish.js')
   },
   data() {
     return {

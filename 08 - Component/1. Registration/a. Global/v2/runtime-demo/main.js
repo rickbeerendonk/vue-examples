@@ -7,8 +7,8 @@ const GreetingComponent = httpVueLoader('./GreetingComponent.vue');
 const OtherComponent = httpVueLoader('./OtherComponent.vue');
 
 // Register component globally
-Vue.component('greeting-component', GreetingComponent);
-Vue.component('other-component', OtherComponent);
+Vue.component('GreetingComponent', GreetingComponent);
+Vue.component('OtherComponent', OtherComponent);
 
 // Bootstrap
 new Vue({

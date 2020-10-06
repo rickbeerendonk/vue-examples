@@ -17,7 +17,7 @@ const ClickMe = httpVueLoader('./ClickMe.vue');
 module.exports = {
   name: 'App',
   components: {
-    clickme: ClickMe
+    ClickMe
   },
   data() {
     return {

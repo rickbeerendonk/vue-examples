@@ -28,15 +28,15 @@ import GreetingEnglish from './components/GreetingEnglish.vue';
 export default {
   name: 'App',
   components: {
-    'greeting-english': GreetingEnglish,
+    GreetingEnglish,
     // The non-default components are placed in the same bundle.
     // Build app and observe the created packages
     // or Run and observe the devtools' network tab.
-    'greeting-dutch': () =>
+    GreetingDutch: () =>
       import(
         /* webpackChunkName: "greeting-group" */ './components/GreetingDutch.vue'
       ),
-    'greeting-spanish': () =>
+    GreetingSpanish: () =>
       import(
         /* webpackChunkName: "greeting-group" */ './components/GreetingSpanish.vue'
       )

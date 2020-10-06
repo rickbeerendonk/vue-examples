@@ -11,7 +11,7 @@ import * as Vue from '../../../../../../node_modules/vue_3/dist/vue.esm-browser.
   Vue.createApp({
     // Register component locally
     components: {
-      top: Top
+      Top
     }
   }).mount('#app');
 })();

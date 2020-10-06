@@ -8,9 +8,9 @@ const GreetingSpanish = () => import('./GreetingSpanish.js');
 export default {
   name: 'App',
   components: {
-    'greeting-dutch': GreetingDutch,
-    'greeting-english': GreetingEnglish,
-    'greeting-spanish': GreetingSpanish
+    GreetingDutch,
+    GreetingEnglish,
+    GreetingSpanish
   },
   data() {
     return {

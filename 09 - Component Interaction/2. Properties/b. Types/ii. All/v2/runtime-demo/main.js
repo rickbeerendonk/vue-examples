@@ -9,6 +9,6 @@ const MyComponent = httpVueLoader('./MyComponent.vue');
 new Vue({
   el: '#app',
   components: {
-    'my-component': MyComponent
+    MyComponent
   }
 });

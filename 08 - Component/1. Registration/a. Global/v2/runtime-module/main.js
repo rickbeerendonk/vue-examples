@@ -7,8 +7,8 @@ import GreetingComponent from './GreetingComponent.js';
 import OtherComponent from './OtherComponent.js';
 
 // Register component globally
-Vue.component('greeting-component', GreetingComponent);
-Vue.component('other-component', OtherComponent);
+Vue.component('GreetingComponent', GreetingComponent);
+Vue.component('OtherComponent', OtherComponent);
 
 // Bootstrap
 new Vue({

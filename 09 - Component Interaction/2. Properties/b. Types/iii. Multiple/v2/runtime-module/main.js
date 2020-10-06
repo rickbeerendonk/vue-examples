@@ -8,7 +8,7 @@ import GreetingComponent from './GreetingComponent.js';
 new Vue({
   el: '#app',
   components: {
-    'greeting-component': GreetingComponent
+    GreetingComponent
   },
   template: `
     <div>

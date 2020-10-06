@@ -10,6 +10,6 @@ new Vue({
   el: '#app',
   // Register component locally
   components: {
-    top: Top
+    Top
   }
 });

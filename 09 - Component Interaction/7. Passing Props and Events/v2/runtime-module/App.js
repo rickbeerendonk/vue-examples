@@ -11,13 +11,13 @@ export default {
     ImportantAnchor
   },
   template: `
-    <ImportantAnchor
+    <important-anchor
       href="https://vuejs.org/"
       rel="noopener"
       target="_blank"
       title="Everything about Vue"
     >
       Vue website
-    </ImportantAnchor>
+    </important-anchor>
   `
 };

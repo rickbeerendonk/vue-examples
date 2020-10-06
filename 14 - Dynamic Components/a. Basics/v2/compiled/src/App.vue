@@ -30,9 +30,9 @@ import GreetingSpanish from './components/GreetingSpanish.vue';
 export default {
   name: 'App',
   components: {
-    'greeting-dutch': GreetingDutch,
-    'greeting-english': GreetingEnglish,
-    'greeting-spanish': GreetingSpanish
+    GreetingDutch,
+    GreetingEnglish,
+    GreetingSpanish
   },
   data() {
     return {

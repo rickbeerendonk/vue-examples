@@ -2,14 +2,14 @@
 <!-- Copyright © 2020 Rick Beerendonk          -->
 
 <template>
-  <ImportantAnchor
+  <important-anchor
     href="https://vuejs.org/"
     rel="noopener"
     target="_blank"
     title="Everything about Vue"
   >
     Vue website
-  </ImportantAnchor>
+  </important-anchor>
 </template>
 
 <script>
@@ -20,7 +20,7 @@ const ImportantAnchor = httpVueLoader('./ImportantAnchor.vue');
 module.exports = {
   name: 'App',
   components: {
-    importantanchor: ImportantAnchor
+    ImportantAnchor
   }
 };
 </script>

@@ -8,7 +8,7 @@ import GreetingComponent from './GreetingComponent.js';
 // Bootstrap
 const app = Vue.createApp({
   components: {
-    'greeting-component': GreetingComponent
+    GreetingComponent
   }
 });
 

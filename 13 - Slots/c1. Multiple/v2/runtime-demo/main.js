@@ -9,6 +9,6 @@ const ContainerComponent = httpVueLoader('./ContainerComponent.vue');
 new Vue({
   el: '#app',
   components: {
-    'container-component': ContainerComponent
+    ContainerComponent
   }
 });

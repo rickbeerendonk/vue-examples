@@ -10,7 +10,7 @@ const App = httpVueLoader('./App.vue');
 new Vue({
   el: '#app',
   components: {
-    app: App
+    App
   },
   template: '<app />'
 });

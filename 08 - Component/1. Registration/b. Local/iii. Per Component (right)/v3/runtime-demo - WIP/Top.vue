@@ -16,7 +16,7 @@
   module.exports = {
     name: 'Top',
     components: {
-      middle: Middle
+      Middle
     }
   };
 })();

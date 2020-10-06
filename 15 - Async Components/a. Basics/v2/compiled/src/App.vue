@@ -26,9 +26,9 @@
 export default {
   name: 'App',
   components: {
-    'greeting-dutch': () => import('./components/GreetingDutch.vue'),
-    'greeting-english': () => import('./components/GreetingEnglish.vue'),
-    'greeting-spanish': () => import('./components/GreetingSpanish.vue')
+    GreetingDutch: () => import('./components/GreetingDutch.vue'),
+    GreetingEnglish: () => import('./components/GreetingEnglish.vue'),
+    GreetingSpanish: () => import('./components/GreetingSpanish.vue')
   },
   data() {
     return {

@@ -17,7 +17,7 @@ const Child = httpVueLoader('./Child.vue');
 module.exports = {
   name: 'App',
   components: {
-    child: Child
+    Child
   },
   data() {
     return {
