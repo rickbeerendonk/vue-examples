@@ -3,7 +3,7 @@
 
 /* global __dirname */
 
-const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
 
@@ -26,7 +26,7 @@ module.exports = {
       {
         enforce: 'pre',
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: file => /node_modules/.test(file) && !/\.vue\.js/.test(file),
         loader: 'eslint-loader'
       },
       {
@@ -45,10 +45,14 @@ module.exports = {
     ]
   },
   plugins: [
+    new CopyWebpackPlugin({ patterns: [{ from: 'public' }] }),
     new HtmlWebpackPlugin({
+      template: './public/index.html',
       title: 'Debugging - Basics'
     }),
-    new VueLoaderPlugin(),
-    new webpack.HotModuleReplacementPlugin()
-  ]
+    new VueLoaderPlugin()
+  ],
+  resolve: {
+    extensions: ['*', '.js', '.jsx', '.json', '.mjs', '.vue']
+  }
 };

@@ -11,6 +11,7 @@
     "@babel/preset-env": "7.11.5",
     "babel-eslint": "10.1.0",
     "babel-loader": "8.1.0",
+    "copy-webpack-plugin": "6.2.0",
     "css-loader": "3.6.0",
     "eslint": "7.10.0",
     "eslint-config-prettier": "6.12.0",
@@ -26,16 +27,15 @@
     "webpack-dev-server": "3.11.0"
   },
   "dependencies": {
-    "http-server": "0.12.3",
     "http-vue-loader": "1.4.2",
     "vue": "2.6.12"
   },
   "scripts": {
-    "build": "webpack",
-    "build-watch": "webpack --watch",
+    "build": "npm run clean && webpack --progress",
+    "clean": "rimraf dist",
     "eslint": "eslint . --ext .js,.jsx,.vue --cache",
     "eslint-fix": "eslint . --ext .js,.jsx,.vue --cache --fix",
-    "serve": "webpack-dev-server --open",
+    "serve": "webpack-dev-server --hot --open",
     "serve-debug": "webpack-dev-server"
   }
 }
