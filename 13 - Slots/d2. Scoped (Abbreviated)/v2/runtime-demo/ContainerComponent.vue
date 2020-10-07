@@ -15,9 +15,11 @@
 
 module.exports = {
   name: 'ContainerComponent',
-  data: () => ({
-    source: 'Container'
-  })
+  data() {
+    return {
+      source: 'Container'
+    };
+  }
 };
 </script>
 

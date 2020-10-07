@@ -3,9 +3,11 @@
 
 export default {
   name: 'ContainerComponent',
-  data: () => ({
-    source: 'Container'
-  }),
+  data() {
+    return {
+      source: 'Container'
+    };
+  },
   template: `
     <div style="background-color: lightgray; padding: 10px">
       Normal:
