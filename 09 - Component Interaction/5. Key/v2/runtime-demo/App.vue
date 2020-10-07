@@ -5,7 +5,7 @@
   <div>
     <button @click="id++">Change ID</button>
     <br />
-    <ClickMe :key="id" />
+    <click-me :key="id" />
   </div>
 </template>
 
