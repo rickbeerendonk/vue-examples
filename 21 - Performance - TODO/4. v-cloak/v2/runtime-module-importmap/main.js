@@ -3,6 +3,9 @@
 
 import Vue from 'vue';
 
+// Enable component init, compile, render and patch performance tracing.
+Vue.config.performance = true;
+
 new Vue({
   el: '#app',
   data: {

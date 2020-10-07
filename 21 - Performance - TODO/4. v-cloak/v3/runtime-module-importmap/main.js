@@ -3,10 +3,15 @@
 
 import * as Vue from 'vue';
 
-Vue.createApp({
+const app = Vue.createApp({
   data() {
     return {
       greeting: 'Hello World!'
     };
   }
-}).mount('#app');
+});
+
+// Enable component init, compile, render and patch performance tracing.
+app.config.performance = true;
+
+app.mount('#app');
