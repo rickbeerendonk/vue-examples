@@ -11,11 +11,11 @@ import * as Vue from '../../../../../node_modules/vue_3/dist/vue.esm-browser.js'
   // Bootstrap
   const app = Vue.createApp({
     template: `
-        <greeting />
-        <greetingFC />
+        <Greeting />
+        <GreetingFC />
       `
   });
-  app.component('greeting', Greeting);
-  app.component('greetingFC', GreetingFC);
+  app.component('Greeting', Greeting);
+  app.component('GreetingFC', GreetingFC);
   app.mount('#app');
 })();

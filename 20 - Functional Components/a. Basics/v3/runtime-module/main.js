@@ -9,10 +9,10 @@ import GreetingFC from './GreetingFC.js';
 // Bootstrap
 const app = Vue.createApp({
   template: `
-      <greeting />
-      <greetingFC />
+      <Greeting />
+      <GreetingFC />
     `
 });
-app.component('greeting', Greeting);
-app.component('greetingFC', GreetingFC);
+app.component('Greeting', Greeting);
+app.component('GreetingFC', GreetingFC);
 app.mount('#app');

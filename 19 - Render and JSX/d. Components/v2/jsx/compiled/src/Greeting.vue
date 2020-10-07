@@ -4,7 +4,12 @@
 <script>
 export default {
   name: 'Greeting',
-  props: ['name'],
+  props: {
+    name: {
+      type: String,
+      required: true
+    }
+  },
   render() {
     return <h1 id="app">Hello {this.name}!</h1>;
   }
