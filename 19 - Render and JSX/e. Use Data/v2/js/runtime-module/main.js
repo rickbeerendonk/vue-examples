@@ -9,9 +9,6 @@ new Vue({
     name: 'Vue'
   },
   render: function (createElement) {
-    return createElement(
-      'h1', // tag name
-      ['Hello ', this.name, '!'] // array of children
-    );
+    return createElement('h1', ['Hello ', this.name, '!']);
   }
 });

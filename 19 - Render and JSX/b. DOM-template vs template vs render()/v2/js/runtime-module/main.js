@@ -7,9 +7,6 @@ new Vue({
   el: '#app',
   template: '<h1>Component Template</h1>',
   render: function (createElement) {
-    return createElement(
-      'h1', // tag name
-      ['Render()'] // array of children
-    );
+    return createElement('h1', ['Render()']);
   }
 });
