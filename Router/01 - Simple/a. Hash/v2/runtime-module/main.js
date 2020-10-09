@@ -13,6 +13,8 @@ const Page2 = { template: '<h2>Page 2</h2>' };
 
 new Vue({
   router: new VueRouter({
+    // Default:
+    // mode: 'hash',
     routes: [
       { path: '/', component: Home },
       { path: '/page1', component: Page1 },

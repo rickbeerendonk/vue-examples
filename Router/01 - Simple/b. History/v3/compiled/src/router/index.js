@@ -9,7 +9,9 @@ import Page2 from '../components/Page2.vue';
 
 const router = createRouter({
   // Use HTML5 history mode
+  // [v2] mode: 'history'
   history: createWebHistory(),
+
   routes: [
     { path: '/', component: Home },
     { path: '/page1', component: Page1 },

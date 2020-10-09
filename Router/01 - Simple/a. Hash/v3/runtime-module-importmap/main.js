@@ -12,8 +12,11 @@ const Home = { template: '<h2>Home</h2>' };
 const Page1 = { template: '<h2>Page 1</h2>' };
 const Page2 = { template: '<h2>Page 2</h2>' };
 
+// [v2] new VueRouter()
 const router = createRouter({
+  // [v2] mode: 'hash'
   history: createWebHashHistory(),
+
   routes: [
     { path: '/', component: Home },
     { path: '/page1', component: Page1 },
@@ -22,5 +25,8 @@ const router = createRouter({
 });
 
 const app = Vue.createApp({});
+
+// [v2] Vue.use(VueRouter)
 app.use(router);
+
 app.mount('#app');
