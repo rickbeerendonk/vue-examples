@@ -1,15 +1,12 @@
 /*! European Union Public License version 1.2 !*/
-/*! Copyright © 2019 Rick Beerendonk          !*/
+/*! Copyright © 2020 Rick Beerendonk          !*/
 
 // To use Vue Router v4 in the browser:
 // Shim: https://github.com/guybedford/es-module-shims
 // Or Chrome: chrome://flags/#enable-experimental-productivity-features
 
-import * as Vue from '../../../../../node_modules/vue_3/dist/vue.esm-browser.js';
-import {
-  createRouter,
-  createWebHashHistory
-} from '../../../../../node_modules/vue-router_4/dist/vue-router.esm-browser.js';
+import * as Vue from 'vue';
+import { createRouter, createWebHashHistory } from 'vue-router';
 
 const Home = { template: '<h2>Home</h2>' };
 const Page1 = { template: '<h2>Page 1</h2>' };
