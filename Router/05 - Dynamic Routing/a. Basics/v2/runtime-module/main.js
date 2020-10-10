@@ -9,7 +9,14 @@ Vue.use(VueRouter);
 const Home = { template: '<h2>Home</h2>' };
 
 const Page = {
-  template: '<h2>Page {{ $route.params.id }} </h2>'
+  template: `
+    <div>
+      <h2>Page {{ $route.params.id }}</h2>
+      <p>$route.params:
+        <pre>{{ JSON.stringify($route.params, null, 4) }}</pre>
+      <p>
+    </div>
+  `
 };
 
 new Vue({
