@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import GreetingEditor from './components/GreetingEditor.vue';
+import GreetingEditor from './containers/GreetingEditor';
 
 export default {
   name: 'App',

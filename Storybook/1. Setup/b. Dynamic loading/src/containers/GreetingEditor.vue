@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import EditBox from './EditBox.vue';
-import Greeting from './Greeting.vue';
+import EditBox from '../components/EditBox';
+import Greeting from '../components/Greeting';
 
 export default {
   name: 'GreetingEditor',

@@ -3,7 +3,7 @@
 
 import Vue from 'vue';
 
-import App from './App.vue';
+import App from './App';
 
 const component = new Vue({
   render: h => h(App)

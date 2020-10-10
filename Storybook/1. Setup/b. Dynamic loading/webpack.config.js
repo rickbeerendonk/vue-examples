@@ -51,5 +51,8 @@ module.exports = {
     }),
     new VueLoaderPlugin(),
     new webpack.HotModuleReplacementPlugin()
-  ]
+  ],
+  resolve: {
+    extensions: ['*', '.js', '.jsx', '.json', '.mjs', '.vue']
+  }
 };
