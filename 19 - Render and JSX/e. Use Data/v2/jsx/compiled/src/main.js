@@ -6,7 +6,9 @@ import Vue from 'vue';
 import App from './App.vue';
 
 const component = new Vue({
-  render: h => h(App)
+  render() {
+    return <App />;
+  }
 }).$mount();
 
 document.body.appendChild(component.$el);
