@@ -11,13 +11,13 @@ export default {
     }
   },
   render() {
-    return <h1 id="app">Hello {this.name}!</h1>;
+    return <h1 id="greeting">Hello {this.name}!</h1>;
   }
 };
 </script>
 
 <style>
-#app {
+#greeting {
   color: #444;
 }
 </style>

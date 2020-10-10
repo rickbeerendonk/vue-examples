@@ -10,7 +10,7 @@ export default {
   name: 'App',
   template: '<h1>Component Template</h1>',
   render() {
-    return <h1 id="app">Render()</h1>;
+    return <h1>Render()</h1>;
   }
 };
 </script>
