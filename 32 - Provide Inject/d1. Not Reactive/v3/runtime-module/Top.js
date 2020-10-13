@@ -14,6 +14,7 @@ export default {
     };
   },
   provide() {
+    // Not reactive by default
     return {
       color: this.color
     };
@@ -28,6 +29,6 @@ export default {
   },
   template: `
     <Middle />
-    <button @click="switchColor">Switch</button>
+    <button @click="switchColor">Switch (current: {{color}})</button>
   `
 };
