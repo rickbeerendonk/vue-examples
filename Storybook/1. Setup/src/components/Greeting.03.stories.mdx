@@ -8,16 +8,27 @@ import Greeting from './Greeting';
 
 Allows you to greet a name.
 
+<!--- This is your Story template function -->
+
+export const Template = (args, { argTypes }) => ({
+  components: { Greeting },
+  props: Object.keys(argTypes),
+  template: '<Greeting :name="name" />'
+});
+
 <Canvas>
-  <Story name="With name">
-    <Greeting name="Vue" />
+  <Story
+    name="With name"
+    args={{
+      name: 'Vue'
+    }}
+  >
+    {Template.bind({})}
   </Story>
 </Canvas>
 
 If you don't provide a name, the greet will not appear:
 
 <Canvas>
-  <Story name="Without name">
-    <Greeting />
-  </Story>
+  <Story name="Without name">{Template.bind({})}</Story>
 </Canvas>
