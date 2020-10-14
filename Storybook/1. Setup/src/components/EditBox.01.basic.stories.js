@@ -8,13 +8,7 @@ import EditBox from './EditBox';
 // Register custom component.
 Vue.component('EditBox', EditBox);
 
-/*
-storiesOf('Components/EditBox', module)
-  .add('with value', () => <EditBox onChange={() => {}} value="Test" />)
-  .add('with onChange', () => <EditBox onChange={action('editbox-change')} />);
-*/
-
-storiesOf('Components/EditBox', module)
+storiesOf('Components/EditBox/01 - JS Basic', module)
   .add('Default', () => '<EditBox />')
   .add('With value', () => '<EditBox @change="() => {}" value="Vue" />')
   .add('With onChange', () => ({
