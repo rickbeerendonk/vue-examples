@@ -1,10 +1,33 @@
-import Vue from 'vue';
-import { storiesOf } from '@storybook/vue';
-import { action } from '@storybook/addon-actions';
-
 // Import your custom component.
 import EditBox from './EditBox';
 
+// Name
+export default {
+  title: 'Components/EditBox/01 - JS Basic',
+  component: EditBox
+};
+
+// Story "Default"
+export const Default = (args, { argTypes }) => ({
+  components: { EditBox },
+  props: Object.keys(argTypes),
+  template: '<EditBox :value="value" @change="change" />'
+});
+
+// Story "With Value"
+export const WithValue = (args, { argTypes }) => ({
+  components: { EditBox },
+  props: Object.keys(argTypes),
+  template: '<EditBox value="Vue 😄" @change="change" />'
+});
+
+// Story "With Value"
+export const WithChange = () => ({
+  components: { EditBox },
+  template: '<EditBox @change="change" />'
+});
+
+/*
 // Register custom component.
 Vue.component('EditBox', EditBox);
 
@@ -26,3 +49,4 @@ storiesOf('Components/EditBox/01 - JS Basic', module)
     },
     template: '<EditBox @change="onChange" :value="value" />'
   }));
+*/

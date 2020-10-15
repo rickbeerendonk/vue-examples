@@ -11,7 +11,8 @@ export default {
   props: {
     value: {
       type: String,
-      required: true
+      default: undefined,
+      required: false
     }
   },
   methods: {

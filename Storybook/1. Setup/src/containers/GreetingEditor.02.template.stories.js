@@ -1,13 +1,13 @@
 import GreetingEditor from './GreetingEditor';
 
-// Title + Component
+// 1. Title + Component
 
 export default {
   title: 'Containers/GreetingEditor/02 - JS Template',
   component: GreetingEditor
 };
 
-// Create a "template" of how args map to rendering
+// 2. Template of how args map to rendering
 
 const Template = (args, { argTypes }) => ({
   components: { GreetingEditor },
@@ -15,7 +15,7 @@ const Template = (args, { argTypes }) => ({
   template: '<GreetingEditor />'
 });
 
-// Each story reuses the template
+// 3. Each story reuses the template
 
 export const Default = Template.bind({});
 Default.args = {};
