@@ -39,6 +39,6 @@
     "build-watch": "webpack --watch",
     "serve": "webpack-dev-server",
     "storybook": "start-storybook -p 6006",
-    "storybook-build": "build-storybook -c .storybook -o build-storybook"
+    "storybook-build": "build-storybook -c .storybook -o dist-storybook"
   }
 }
