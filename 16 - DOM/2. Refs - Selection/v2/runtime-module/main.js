@@ -10,8 +10,8 @@ new Vue({
   },
   mounted() {
     // Use $refs to get direct DOM access
-    // Useful for focus or selections:
-    this.$refs.input.focus();
+    //this.$refs.input.focus();
+    this.$refs.input.select();
   },
   methods: {
     changed(e) {
