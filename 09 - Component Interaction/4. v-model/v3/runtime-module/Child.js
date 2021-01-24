@@ -5,14 +5,14 @@
 
 export default {
   name: 'Child',
-  props: ['value'], // must be "value" to use with v-model
+  props: ['modelValue'], // must be "modelValue" to use with v-model
   methods: {
     changed(e) {
       this.$emit(
-        'input', // Must be "input" to use with v-model
+        'update:modelValue', // Must be "update:modelValue" to use with v-model
         e.target.value
       );
     }
   },
-  template: '<input :value="value" @keyup="changed" />'
+  template: '<input :value="modelValue" @keyup="changed" />'
 };
