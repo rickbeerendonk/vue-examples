@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2021 Rick Beerendonk -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rick Beerendonk" />
+
+    <title>Performance - v-once</title>
+    <link rel="stylesheet" href="../../../../resources/oblicum.css" />
+    <link rel="stylesheet" href="../../../../resources/oblicum-vue3.css" />
+  </head>
+  <body>
+    <p style="color: gray">
+      Use the Vue devtools to measure the Component render time of App and
+      GreetingComponent with or without the use of v-once.
+    </p>
+
+    <div id="app">
+      {{ count }}
+      <greeting-component :count="count"></greeting-component>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
