@@ -12,4 +12,3 @@ const app = Vue.createApp({
   render: h => h(App)
 });
 app.mount('#app');
-app.mount('#app');
