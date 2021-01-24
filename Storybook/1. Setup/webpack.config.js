@@ -32,7 +32,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['vue-style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.js$/,
@@ -42,6 +42,15 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'vue-loader'
+      },
+      {
+        // You also can put this loader above, but I recommend to use
+        // a separeted rule with enforce: 'post' for maintainability
+        // and simplicity. For example, you can enable the loader only
+        // for development build.
+        test: /\.vue$/,
+        use: 'vue-docgen-loader',
+        enforce: 'post'
       }
     ]
   },

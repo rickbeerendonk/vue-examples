@@ -3,6 +3,7 @@
 
 /* global __dirname */
 
+const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
@@ -11,14 +12,16 @@ module.exports = {
   context: __dirname,
   entry: './src/main.js',
   output: {
-    path: __dirname + '/dist',
-    filename: 'bundle.js'
+    path: path.join(__dirname, '/dist'),
+    filename: '[name].[fullhash:8].js'
   },
   devtool: 'source-map',
   devServer: {
     contentBase: './dist',
     port: 9100,
-    hot: true
+    hot: true,
+    overlay: true,
+    stats: 'errors-only'
   },
   mode: 'development',
   module: {
@@ -31,7 +34,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['vue-style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.js$/,
@@ -48,8 +51,7 @@ module.exports = {
     new CopyWebpackPlugin({ patterns: [{ from: 'public' }] }),
     new HtmlWebpackPlugin({
       favicon: './public/favicon.ico',
-      template: './public/index.html',
-      title: 'Render and JSX - DOM-template vs template vs render()'
+      template: './src/template.ejs'
     }),
     new VueLoaderPlugin()
   ],
