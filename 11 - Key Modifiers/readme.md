@@ -4,9 +4,9 @@
 
 See: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values
 
-## Key Codes (deprecated)
+## Key Codes
 
-Deprecated, so might not work (anymore) in your browser: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode
+Numbered key codes are deprecated, so might not work (anymore) in your browser: https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode
 
 ## System Modifier Keys
 
