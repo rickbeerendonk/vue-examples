@@ -9,6 +9,8 @@ const app = Vue.createApp({
   components: {
     App
   },
-  render: h => h(App)
+  render() {
+    return Vue.h(App);
+  }
 });
 app.mount('#app');
