@@ -4,12 +4,14 @@
 import Vue from '../../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 // Global Registration of custom modifier
+// WARNING: Deprecated & not available in Vue 3
 Vue.config.keyCodes.f1 = 112;
 
 new Vue({
   el: '#app',
   config: {
     // Local Registration of custom modifier
+    // WARNING: Deprecated & not available in Vue 3
     keyCodes: {
       f2: 113
     }
