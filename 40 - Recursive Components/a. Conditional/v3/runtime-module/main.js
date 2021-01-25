@@ -12,4 +12,3 @@ const app = Vue.createApp({
   template: '<Greeting />'
 });
 app.mount('#app');
-app.mound('#app');
