@@ -4,8 +4,10 @@
 import * as Vue from '../../../../node_modules/vue_3/dist/vue.esm-browser.js';
 
 const app = Vue.createApp({
-  data: {
-    name: 'World'
+  data() {
+    return {
+      name: 'World'
+    };
   },
   mounted() {
     // Use $refs to get direct DOM access
