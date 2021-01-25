@@ -5,17 +5,16 @@ import * as Vue from '../../../../node_modules/vue_3/dist/vue.esm-browser.js';
 
 import GreetingComponent from './GreetingComponent.js';
 
-// Enable component init, compile, render and patch performance tracing.
-Vue.config.performance = true;
-
 // Bootstrap
 const app = Vue.createApp({
   name: 'App',
   components: {
     GreetingComponent
   },
-  data: {
-    count: 0
+  data() {
+    return {
+      count: 0
+    };
   },
   mounted() {
     setInterval(() => {
@@ -23,4 +22,8 @@ const app = Vue.createApp({
     }, 50);
   }
 });
+
+// Enable component init, compile, render and patch performance tracing.
+app.config.performance = true;
+
 app.mount('#app');
