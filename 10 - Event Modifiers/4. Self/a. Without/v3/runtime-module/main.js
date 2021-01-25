@@ -10,10 +10,13 @@ const app = Vue.createApp({
     };
   },
   methods: {
-    mousedown: function (event) {
+    parentClicked: function (event) {
       this.result.push(
-        `button: ${event.button}, (ctrlKey: ${event.ctrlKey}, shiftKey  ${event.shiftKey}, altKey: ${event.altKey}, metaKey: ${event.metaKey})`
+        `${event.currentTarget.id} received event for ${event.target.id}.`
       );
+    },
+    childClicked: function (event) {
+      this.result.push(`${event.target.id} received event.`);
     }
   }
 });
