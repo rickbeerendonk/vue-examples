@@ -9,6 +9,7 @@ import * as Vue from '../../../../../../node_modules/vue_3/dist/vue.esm-browser.
 
   // Bootstrap
   const app = Vue.createApp({
+    // Register component locally
     components: {
       GreetingComponent
     }
