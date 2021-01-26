@@ -28,7 +28,7 @@ Vue.createApp({
       // because it uses Proxies (this here is a Proxy):
       //console.log(this);
 
-      this.obj[itemId] = itemId++;
+      this.obj[`prop ${itemId}`] = itemId++;
     }
   }
 }).mount('#app');
