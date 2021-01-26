@@ -4,9 +4,9 @@
 import {
   mapActions,
   mapState
-} from '../../../../node_modules/vuex_3/dist/vuex.esm.browser.js';
+} from '../../../../../node_modules/vuex_3/dist/vuex.esm.browser.js';
 
-import { FETCH_POSTS } from '../store.js';
+import { FETCH_POSTS } from '../../store.js';
 
 import ErrorMessage from './error-message.js';
 import Fetching from './fetching.js';
