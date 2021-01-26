@@ -22,7 +22,8 @@ export default function (WrappedComponent) {
     mounted() {
       document.addEventListener('mousemove', this.handleMouseMove);
     },
-    destroyed() {
+    // destroyed (Vue 2):
+    unmounted() {
       document.removeEventListener('mousemove', this.handleMouseMove);
     },
     render() {
