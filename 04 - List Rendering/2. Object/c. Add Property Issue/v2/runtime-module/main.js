@@ -19,7 +19,7 @@ new Vue({
       this.$set(this.obj, `prop ${itemId}`, itemId++);
     },
     add2() {
-      this.obj[itemId] = itemId++;
+      this.obj[`prop ${itemId}`] = itemId++;
     }
   }
 });
