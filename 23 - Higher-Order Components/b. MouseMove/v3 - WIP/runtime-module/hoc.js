@@ -1,6 +1,8 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
+import { h } from '../../../../node_modules/vue_3/dist/vue.esm-browser.js';
+
 export default function (WrappedComponent) {
   return {
     name: 'withMouseMove',
@@ -23,7 +25,7 @@ export default function (WrappedComponent) {
     destroyed() {
       document.removeEventListener('mousemove', this.handleMouseMove);
     },
-    render(h) {
+    render() {
       return h(WrappedComponent, {
         props: {
           ...this.$props,
