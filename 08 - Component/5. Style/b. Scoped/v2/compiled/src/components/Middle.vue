@@ -4,7 +4,7 @@
 <template>
   <div id="middle">
     <h2>Middle</h2>
-    <Bottom />
+    <bottom />
   </div>
 </template>
 

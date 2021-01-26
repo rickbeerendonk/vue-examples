@@ -3,7 +3,7 @@
 
 <template>
   <div id="app">
-    <Top />
+    <top />
   </div>
 </template>
 
