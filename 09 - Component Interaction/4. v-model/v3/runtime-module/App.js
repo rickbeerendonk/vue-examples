@@ -17,13 +17,17 @@ export default {
   },
   // Short for:
   //  <child
-  //    v-bind:value="greetingText"
-  //    v-on:input="greetingText = $event">
-  //  </child>
+  //    v-bind:modelValue="greetingText"
+  //    v-on:['update:modelValue']="greetingText = $event" />
   template: `
     <div>
-      <Child v-model="greetingText" />
+      <child v-model="greetingText" />
       <h1>Hello {{ greetingText }}</h1>
+      
+      <hr />
+      <child
+        v-bind:modelValue="greetingText"
+        v-on:['update:modelValue']="greetingText = $event" />
     </div>
   `
 };
