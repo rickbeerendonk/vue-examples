@@ -3,14 +3,14 @@
 
 import * as Vue from '../../../../../node_modules/vue_3/dist/vue.esm-browser.js';
 
-Vue.directive('focus', {
-  inserted(elem) {
-    elem.focus();
-  }
-});
-app.mount('#app');
-
 const app = Vue.createApp({
   el: '#app'
 });
+
+app.directive('focus', {
+  mounted(elem) {
+    elem.focus();
+  }
+});
+
 app.mount('#app');
