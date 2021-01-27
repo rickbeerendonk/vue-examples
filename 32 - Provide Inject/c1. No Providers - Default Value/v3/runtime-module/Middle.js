@@ -8,10 +8,5 @@ export default {
   components: {
     Bottom
   },
-  provide() {
-    return {
-      color: 'Blue'
-    };
-  },
   template: '<Bottom />'
 };
