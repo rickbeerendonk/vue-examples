@@ -12,11 +12,9 @@ export default function (WrappedComponent) {
       return h(
         'div',
         {
-          attrs: {
-            style: `color: ${extraColor}`
-          }
+          style: `color: ${extraColor}`
         },
-        [h(WrappedComponent, { props: passThroughProps })]
+        [h(WrappedComponent, { ...passThroughProps })]
       );
     }
   };

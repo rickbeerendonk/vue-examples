@@ -19,10 +19,11 @@ export default {
   mounted() {
     document.addEventListener('mousemove', this.handleMouseMove);
   },
-  destroyed() {
+  // destroyed (Vue 2):
+  unmounted() {
     document.removeEventListener('mousemove', this.handleMouseMove);
   },
   render() {
-    return this.$scopedSlots.default(this.mousePosition);
+    return this.$slots.default(this.mousePosition);
   }
 };
