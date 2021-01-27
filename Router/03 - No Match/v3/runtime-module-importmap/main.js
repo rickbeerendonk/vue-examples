@@ -24,9 +24,9 @@ const router = createRouter({
     // Catches all, so must be the last entry:
     // [v2] { path: '*', component: NoMatch }
     // - noMatch can directly navigate to the not-found route using its name
-    { path: '/:pathMatch(.*)*', name: 'not-found', component: NoMatch },
+    { path: '/:pathMatch(.*)*', component: NoMatch },
     // - In noMatch, params will be encoded when resolving or pushing
-    { path: '/:pathMatch(.*)', name: 'bad-not-found', component: NoMatch }
+    { path: '/:pathMatch(.*)', component: NoMatch }
   ]
 });
 
