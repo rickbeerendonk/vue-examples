@@ -3,7 +3,7 @@
 
 <template>
   <div>
-    <child :name="greetingText" @change="greetingChanged($event)"></child>
+    <child :name="greetingText" @change="greetingText = $event"></child>
     <h1>Hello {{ greetingText }}</h1>
   </div>
 </template>
@@ -23,11 +23,6 @@ module.exports = {
     return {
       greetingText: 'World'
     };
-  },
-  methods: {
-    greetingChanged: function (value) {
-      this.greetingText = value;
-    }
   }
 };
 </script>

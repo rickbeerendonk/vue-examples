@@ -22,7 +22,7 @@ export default {
   },
   template: `
     <div>
-      <Child :name="greetingText" @change="greetingChanged($event)"></Child>
+      <Child :name="greetingText" @change="greetingChanged"></Child>
       <h1>Hello {{ greetingText }}</h1>
     </div>
   `
