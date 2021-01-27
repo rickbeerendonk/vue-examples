@@ -1,17 +1,19 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
+import { defineAsyncComponent } from '../../../../node_modules/vue_3/dist/vue.esm-browser.js';
+
 import ErrorComponent from './components/Error.mjs';
 import LoadingComponent from './components/Loading.mjs';
 
 function createAsyncComponent(module) {
-  return () => ({
-    // Load component (using a Promise)
-    component: import(module),
+  return defineAsyncComponent({
+    // The factory function
+    loader: () => import(module),
     // Component to show while loading
-    loading: LoadingComponent,
+    loadingComponent: LoadingComponent,
     // Component to show when load fails
-    error: ErrorComponent,
+    errorComponent: ErrorComponent,
     // Delay before showing loading component in ms
     // Default = 200ms, so we don't see lots of spinners on fast websites.
     delay: 100,

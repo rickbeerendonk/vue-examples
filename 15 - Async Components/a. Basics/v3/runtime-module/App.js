@@ -1,16 +1,14 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-const GreetingDutch = () => import('./GreetingDutch.js');
-const GreetingEnglish = () => import('./GreetingEnglish.js');
-const GreetingSpanish = () => import('./GreetingSpanish.js');
+import { defineAsyncComponent } from '../../../../../node_modules/vue_3/dist/vue.esm-browser.js';
 
 export default {
   name: 'App',
   components: {
-    GreetingDutch,
-    GreetingEnglish,
-    GreetingSpanish
+    GreetingDutch: defineAsyncComponent(() => import('./GreetingDutch.js')),
+    GreetingEnglish: defineAsyncComponent(() => import('./GreetingEnglish.js')),
+    GreetingSpanish: defineAsyncComponent(() => import('./GreetingSpanish.js'))
   },
   data() {
     return {
@@ -21,12 +19,6 @@ export default {
     greetingLanguage() {
       return 'greeting-' + this.language;
     }
-  },
-  mounted() {
-    // After the UI is shown, pre-load components so they are already
-    // in memory when you need them (see behavior on devtools' network tab)
-    GreetingDutch();
-    // GreetingSpanish();
   },
   template: `
     <div>

@@ -6,10 +6,4 @@ import * as Vue from '../../../../../node_modules/vue_3/dist/vue.esm-browser.js'
 import App from './App.mjs';
 
 // Bootstrap
-const app = Vue.createApp({
-  el: '#app',
-  components: {
-    App
-  },
-  template: '<app />'
-});
+Vue.createApp(App).mount('#app');
