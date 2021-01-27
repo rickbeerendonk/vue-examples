@@ -4,7 +4,11 @@
 import * as Vue from '../../../../../node_modules/vue_3/dist/vue.esm-browser.js';
 
 const app = Vue.createApp({
-  el: '#app'
+  data() {
+    return {
+      show: false
+    };
+  }
 });
 
 app.directive('hidden', {
