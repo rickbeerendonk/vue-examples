@@ -18,7 +18,7 @@ export const mouseMoveMixin = {
   mounted() {
     document.addEventListener('mousemove', this.handleMouseMove);
   },
-  destroyed() {
+  unmounted() {
     document.removeEventListener('mousemove', this.handleMouseMove);
   }
 };
