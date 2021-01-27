@@ -16,10 +16,8 @@ export default {
     };
   },
   template: `
-    <div>
-      <button @click="id++">Change ID</button>
-      <br />
-      <ClickMe :key="id" />
-    </div>
+    <button @click="id++">Change ID</button>
+    <br />
+    <ClickMe :key="id" />
   `
 };

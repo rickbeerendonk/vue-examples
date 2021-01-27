@@ -8,12 +8,10 @@ const Home = { template: '<h2>Home</h2>' };
 
 const Page = {
   template: `
-    <div>
-      <h2>Page {{ $route.params.id }}</h2>
-      <p>$route.params:
-        <pre>{{ JSON.stringify($route.params, null, 4) }}</pre>
-      <p>
-    </div>
+    <h2>Page {{ $route.params.id }}</h2>
+    <p>$route.params:
+      <pre>{{ JSON.stringify($route.params, null, 4) }}</pre>
+    <p>
   `
 };
 

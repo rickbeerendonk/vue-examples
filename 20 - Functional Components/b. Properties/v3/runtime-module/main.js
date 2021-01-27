@@ -14,10 +14,8 @@ const app = Vue.createApp({
     greetingfc: GreetingFC
   },
   template: `
-    <div>
-      <greeting name="Vue" />
-      <greetingfc name="Vue" />
-    </div>
+    <greeting name="Vue" />
+    <greetingfc name="Vue" />
   `
 });
 app.mount('#app');

@@ -7,25 +7,23 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 const Home = { template: '<h2>Home</h2>' };
 const Page1 = {
   template: `
-    <div>
-      <h2>Page 1</h2>
-      
-      <nav>
-        <ul>
-          <li>
-            <router-link to="/page1">Subpage 1</router-link>
-          </li>
-          <li>
-            <router-link to="/page1/sub2">Subpage 2</router-link>
-          </li>
-          <li>
-            <router-link to="/page1/sub3">Subpage 3</router-link>
-          </li>
-        </ul>
-      </nav>
+    <h2>Page 1</h2>
+    
+    <nav>
+      <ul>
+        <li>
+          <router-link to="/page1">Subpage 1</router-link>
+        </li>
+        <li>
+          <router-link to="/page1/sub2">Subpage 2</router-link>
+        </li>
+        <li>
+          <router-link to="/page1/sub3">Subpage 3</router-link>
+        </li>
+      </ul>
+    </nav>
 
-      <router-view></router-view>
-    </div>
+    <router-view></router-view>
   `
 };
 const Page2 = { template: '<h2>Page 2</h2>' };

@@ -8,13 +8,11 @@ const Home = { template: '<h2>Home</h2>' };
 const Page1 = { template: '<h2>Page 1</h2>' };
 const Page2 = {
   template: `
-    <div>
-      <h2>Page 2</h2>
-      <ul>
-        <li>$route.name: {{ $route.name }}</li>
-        <li>$route.redirectedFrom: <pre>{{ JSON.stringify($route.redirectedFrom, null, 4) }}</pre></li>
-      </ul>
-    </div>
+    <h2>Page 2</h2>
+    <ul>
+      <li>$route.name: {{ $route.name }}</li>
+      <li>$route.redirectedFrom: <pre>{{ JSON.stringify($route.redirectedFrom, null, 4) }}</pre></li>
+    </ul>
   `
 };
 

@@ -5,9 +5,8 @@ export default {
   name: 'GreetingComponent',
   props: ['count'],
   template: `
-    <div>
-      <h1>Hello World! {{ count }}</h1>
-      <p v-once>
+    <h1>Hello World! {{ count }}</h1>
+    <p v-once>
       Lots of dynamic content (count: {{ count }}).
       Lots of dynamic content (count: {{ count }}).
       Lots of dynamic content (count: {{ count }}).
@@ -3128,7 +3127,6 @@ export default {
       Lots of dynamic content (count: {{ count }}).
       Lots of dynamic content (count: {{ count }}).
       Lots of dynamic content (count: {{ count }}).
-      </p>
-    </div>
+    </p>
   `
 };

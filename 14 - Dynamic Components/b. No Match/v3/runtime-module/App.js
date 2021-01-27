@@ -23,23 +23,21 @@ export default {
     }
   },
   template: `
-    <div>
-      <label>
-        <input v-model="language" type="radio" value="dutch" />
-        Dutch
-      </label>
-      <label>
-        <input v-model="language" type="radio" value="english" />
-        English
-      </label>
-      <label>
-        <input v-model="language" type="radio" value="spanish" />
-        Spanish
-      </label>
+    <label>
+      <input v-model="language" type="radio" value="dutch" />
+      Dutch
+    </label>
+    <label>
+      <input v-model="language" type="radio" value="english" />
+      English
+    </label>
+    <label>
+      <input v-model="language" type="radio" value="spanish" />
+      Spanish
+    </label>
 
-      <div style="background: bisque">
-        <component v-bind:is="greetingLanguage"></component>
-      </div>
+    <div style="background: bisque">
+      <component v-bind:is="greetingLanguage"></component>
     </div>
   `
 };

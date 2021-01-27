@@ -4,13 +4,11 @@
 export default {
   name: 'Fetching',
   template: `
-    <div>
-      <img
-        src="../../../../resources/oblicum-square.svg"
-        class="oblicum-spinner"
-        alt="Fetching..."
-      />
-      Fetching...
-    </div>
+    <img
+      src="../../../../resources/oblicum-square.svg"
+      class="oblicum-spinner"
+      alt="Fetching..."
+    />
+    Fetching...
   `
 };

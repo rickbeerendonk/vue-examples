@@ -21,9 +21,7 @@ export default {
     }
   },
   template: `
-    <div>
-      <Child @updated="childChanged" />
-      <h1>Clicked: {{ count }}</h1>
-    </div>
+    <Child @updated="childChanged" />
+    <h1>Clicked: {{ count }}</h1>
   `
 };

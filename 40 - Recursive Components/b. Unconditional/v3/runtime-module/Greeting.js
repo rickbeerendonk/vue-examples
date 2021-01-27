@@ -5,9 +5,7 @@ export default {
   // name required for recursive components
   name: 'Greeting',
   template: `
-    <div>
-      <h1>Hello World!</h1>
-      <Greeting />
-    </div>
+    <h1>Hello World!</h1>
+    <Greeting />
   `
 };

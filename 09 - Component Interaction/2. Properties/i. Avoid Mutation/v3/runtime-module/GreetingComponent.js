@@ -7,10 +7,8 @@ export default {
   name: 'GreetingComponent',
   props: ['name'],
   template: `
-    <div>
-      <p style="color: gray">See console for "Avoid mutating" warning</p>
-      <input v-model="name" />
-      <h1>Hello {{ name }}!</h1>
-    </div>
+    <p style="color: gray">See console for "Avoid mutating" warning</p>
+    <input v-model="name" />
+    <h1>Hello {{ name }}!</h1>
   `
 };

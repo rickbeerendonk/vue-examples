@@ -13,13 +13,11 @@ export default {
   computed: mapState(['name', 'year']),
   methods: mapActions([CHANGE, INCREMENT]),
   template: `
-    <div>
-      <h1>Hello {{ name }}!</h1>
-      <input :value='name' @input="e => change(e.target.value)" />
+    <h1>Hello {{ name }}!</h1>
+    <input :value='name' @input="e => change(e.target.value)" />
 
-      <h1>{{ year }}</h1>
-      <button @click="() => increment()">Increase</button>
-      <button @click="() => increment(5)">Increase with 5</button>
-    </div>
+    <h1>{{ year }}</h1>
+    <button @click="() => increment()">Increase</button>
+    <button @click="() => increment(5)">Increase with 5</button>
   `
 };

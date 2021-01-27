@@ -21,20 +21,18 @@ export default {
     }
   },
   template: `
-    <div>
-      <label>
-        <input v-model="area" type="radio" value="Name" />
-        Name
-      </label>
-      <label>
-        <input v-model="area" type="radio" value="Value" />
-        Value
-      </label>
+    <label>
+      <input v-model="area" type="radio" value="Name" />
+      Name
+    </label>
+    <label>
+      <input v-model="area" type="radio" value="Value" />
+      Value
+    </label>
 
-      <div style="background: bisque">
-        <!-- No keep-alive needed! -->
-        <component v-bind:is="areaComponent"></component>
-      </div>
+    <div style="background: bisque">
+      <!-- No keep-alive needed! -->
+      <component v-bind:is="areaComponent"></component>
     </div>
   `
 };

@@ -11,9 +11,7 @@ export default {
     Middle
   },
   template: `
-    <div>
-      <h1>Top</h1>
-      <Middle />
-    </div>
+    <h1>Top</h1>
+    <Middle />
   `
 };

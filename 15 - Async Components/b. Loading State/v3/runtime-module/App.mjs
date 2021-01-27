@@ -41,31 +41,29 @@ export default {
     }
   },
   template: `
-    <div>
-      <div style="color: lightgray">
-        <em>Show this example with a Network Latency.</em>
-      </div>
+    <div style="color: lightgray">
+      <em>Show this example with a Network Latency.</em>
+    </div>
 
-      <label>
-        <input v-model="language" type="radio" value="dutch" />
-        Dutch
-      </label>
-      <label>
-        <input v-model="language" type="radio" value="english" />
-        English
-      </label>
-      <label>
-        <input v-model="language" type="radio" value="spanish" />
-        Spanish
-      </label>
-      <label>
-        <input v-model="language" type="radio" value="unknown" />
-        Unknown
-      </label>
+    <label>
+      <input v-model="language" type="radio" value="dutch" />
+      Dutch
+    </label>
+    <label>
+      <input v-model="language" type="radio" value="english" />
+      English
+    </label>
+    <label>
+      <input v-model="language" type="radio" value="spanish" />
+      Spanish
+    </label>
+    <label>
+      <input v-model="language" type="radio" value="unknown" />
+      Unknown
+    </label>
 
-      <div style="background: bisque">
-        <component v-bind:is="greetingLanguage"></component>
-      </div>
+    <div style="background: bisque">
+      <component v-bind:is="greetingLanguage"></component>
     </div>
   `
 };

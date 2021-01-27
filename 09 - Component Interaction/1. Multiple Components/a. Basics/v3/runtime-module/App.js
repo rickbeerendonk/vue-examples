@@ -13,10 +13,8 @@ export default {
     ComponentB
   },
   template: `
-    <div>
-      <h1>App</h1>
-      <ComponentA></ComponentA>
-      <ComponentB></ComponentB>
-    </div>
+    <h1>App</h1>
+    <ComponentA></ComponentA>
+    <ComponentB></ComponentB>
   `
 };
