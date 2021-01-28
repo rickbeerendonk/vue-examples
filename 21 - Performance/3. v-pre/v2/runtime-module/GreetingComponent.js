@@ -7,7 +7,7 @@ export default {
   template: `
     <div>
       <h1>Hello World! {{ count }}</h1>
-      <p v-once>
+      <p v-pre>
       Lots of static content <span>(count: {{ count }})</span>.
       Lots of static content <span>(count: {{ count }})</span>.
       Lots of static content <span>(count: {{ count }})</span>.
