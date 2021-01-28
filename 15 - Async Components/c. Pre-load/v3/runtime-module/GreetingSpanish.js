@@ -9,9 +9,7 @@ export default {
     };
   },
   template: `
-    <div>
-      <label>Spanish: <input v-model="greeting" /></label>
-      <p>Hola {{ greeting }}</p>
-    </div>
+    <label>Spanish: <input v-model="greeting" /></label>
+    <p>Hola {{ greeting }}</p>
   `
 };

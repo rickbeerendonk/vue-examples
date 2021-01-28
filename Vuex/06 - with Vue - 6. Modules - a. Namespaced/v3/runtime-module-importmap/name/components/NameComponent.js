@@ -14,9 +14,7 @@ export default {
     }
   },
   template: `
-    <div>
-      <label>Name: <input v-model="name" /></label>
-      <p>Hello {{ name }}!</p>
-    </div>
+    <label>Name: <input v-model="name" /></label>
+    <p>Hello {{ name }}!</p>
   `
 };

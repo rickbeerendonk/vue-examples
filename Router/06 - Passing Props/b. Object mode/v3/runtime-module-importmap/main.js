@@ -8,12 +8,11 @@ const Home = { template: '<h2>Home</h2>' };
 const Page1 = {
   props: ['a', 'b'],
   template: `
-    <div>
-      <h2>Page 1</h2>
-      a = {{ a }}
-      <br />
-      b = {{ b }}
-    </div>`
+    <h2>Page 1</h2>
+    a = {{ a }}
+    <br />
+    b = {{ b }}
+  `
 };
 const Page2 = {
   props: ['a', 'b'],

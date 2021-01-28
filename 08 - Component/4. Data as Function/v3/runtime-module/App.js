@@ -13,16 +13,14 @@ export default {
     ClickMe_Incorrect
   },
   template: `
-    <div>
-      <h1>Data as an object:</h1>
-      <ClickMe_Incorrect />
-      <br />
-      <ClickMe_Incorrect />
-      <hr/>
-      <h1>Data as a function:</h1>
-      <ClickMe_Correct />
-      <br />
-      <ClickMe_Correct />
-    </div>
+    <h1>Data as a function:</h1>
+    <ClickMe_Correct />
+    <br />
+    <ClickMe_Correct />
+    <hr/>
+    <h1>Data as an object:</h1>
+    <ClickMe_Incorrect />
+    <br />
+    <ClickMe_Incorrect />
   `
 };

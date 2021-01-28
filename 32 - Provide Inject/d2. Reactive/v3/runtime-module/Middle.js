@@ -1,8 +1,12 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
+import Bottom from './Bottom.js';
+
 export default {
-  name: 'Bottom',
-  inject: ['color'],
-  template: '<h1 v-bind:style="{color: color}">Bottom</h1>'
+  name: 'Middle',
+  components: {
+    Bottom
+  },
+  template: '<Bottom />'
 };

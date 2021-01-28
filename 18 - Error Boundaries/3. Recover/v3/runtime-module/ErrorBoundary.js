@@ -16,16 +16,14 @@ export default {
     return false;
   },
   template: `
-    <div>
-      <div 
-        v-if="error" 
-        style="background: pink; color: red; padding-left: 0.5rem; padding-bottom: 0.5rem; overflow: hidden"
-      >
-        <p>{{ error.message }}</p>
-        <pre style="font-size: 0.5rem">{{ error.stack }}</pre>
-        <button @click="error = null">Reload</button>
-      </div>
-      <slot v-else />
+    <div 
+      v-if="error" 
+      style="background: pink; color: red; padding-left: 0.5rem; padding-bottom: 0.5rem; overflow: hidden"
+    >
+      <p>{{ error.message }}</p>
+      <pre style="font-size: 0.5rem">{{ error.stack }}</pre>
+      <button @click="error = null">Reload</button>
     </div>
+    <slot v-else />
   `
 };

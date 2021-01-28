@@ -52,19 +52,17 @@ export default {
     }
   },
   template: `
-    <div class="post">
-      <div v-if="loading">
-        Loading...
-      </div>
+    <div v-if="loading">
+      Loading...
+    </div>
 
-      <div v-if="error">
-        Error: {{ error }}
-      </div>
+    <div v-if="error">
+      Error: {{ error }}
+    </div>
 
-      <div v-if="post">
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.body }}</p>
-      </div>
+    <div v-if="post">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.body }}</p>
     </div>
   `
 };

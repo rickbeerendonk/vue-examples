@@ -11,9 +11,5 @@ export default {
     // Stop the error from propagating.
     return false;
   },
-  template: `
-    <div id="errorboundaryroot">
-      <slot />
-    </div>
-  `
+  template: '<slot />'
 };

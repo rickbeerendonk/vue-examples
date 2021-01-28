@@ -8,10 +8,8 @@ import DividerComponent from './DividerComponent.js';
 const app = Vue.createApp({
   components: { DividerComponent },
   template: `
-    <div>
-      <h1>Without Error Boundary</h1>
-      <divider-component />
-    </div>
+    <h1>Without Error Boundary</h1>
+    <divider-component />
   `
 });
 app.mount('#app');

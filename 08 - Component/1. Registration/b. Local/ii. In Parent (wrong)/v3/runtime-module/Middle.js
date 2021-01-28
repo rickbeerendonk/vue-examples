@@ -4,9 +4,7 @@
 export default {
   name: 'Middle',
   template: `
-    <div>
-      <h2>Middle</h2>
-      <Bottom />
-    </div>
+    <h2>Middle</h2>
+    <Bottom />
   `
 };

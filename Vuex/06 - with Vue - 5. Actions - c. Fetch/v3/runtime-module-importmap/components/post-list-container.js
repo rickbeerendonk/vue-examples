@@ -22,10 +22,8 @@ export default {
     this[FETCH_POSTS]('resources/posts.json');
   },
   template: `
-    <div>
-      <Fetching v-if="isFetching" />
-      <ErrorMessage v-else-if="error" message="error" />
-      <PostList v-else :posts="posts" />
-    </div>
+    <Fetching v-if="isFetching" />
+    <ErrorMessage v-else-if="error" message="error" />
+    <PostList v-else :posts="posts" />
   `
 };

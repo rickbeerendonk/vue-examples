@@ -5,9 +5,8 @@ export default {
   name: 'GreetingComponent',
   props: ['count'],
   template: `
-    <div>
-      <h1>Hello World! {{ count }}</h1>
-      <p v-once>
+    <h1>Hello World! {{ count }}</h1>
+    <p v-once>
       Lots of static content <span>(count: {{ count }})</span>.
       Lots of static content <span>(count: {{ count }})</span>.
       Lots of static content <span>(count: {{ count }})</span>.
@@ -3128,7 +3127,6 @@ export default {
       Lots of static content <span>(count: {{ count }})</span>.
       Lots of static content <span>(count: {{ count }})</span>.
       Lots of static content <span>(count: {{ count }})</span>.
-      </p>
-    </div>
+    </p>
   `
 };

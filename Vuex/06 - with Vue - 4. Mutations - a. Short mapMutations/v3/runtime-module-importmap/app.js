@@ -13,10 +13,8 @@ export default {
   computed: mapState(['year']),
   methods: mapMutations([INCREMENT]),
   template: `
-    <div>
-      <h1>{{ year }}</h1>
-      <button @click="() => increment()">Increase</button>
-      <button @click="() => increment(5)">Increase with 5</button>
-    </div>
+    <h1>{{ year }}</h1>
+    <button @click="() => increment()">Increase</button>
+    <button @click="() => increment(5)">Increase with 5</button>
   `
 };

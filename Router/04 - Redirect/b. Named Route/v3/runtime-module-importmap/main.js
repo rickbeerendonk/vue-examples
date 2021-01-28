@@ -8,13 +8,11 @@ const Home = { template: '<h2>Home</h2>' };
 const Page1 = { template: '<h2>Page 1</h2>' };
 const Page2 = {
   template: `
-    <div>
-      <h2>Page 2</h2>
-      <ul>
-        <li>$route.name: {{ $route.name }}</li>
-        <li>$route.redirectedFrom: <pre>{{ JSON.stringify($route.redirectedFrom, null, 4) }}</pre></li>
-      </ul>
-    </div>
+    <h2>Page 2</h2>
+    <ul>
+      <li>$route.name: {{ $route.name }}</li>
+      <li>$route.redirectedFrom: <pre>{{ JSON.stringify($route.redirectedFrom, null, 4) }}</pre></li>
+    </ul>
   `
 };
 
@@ -24,7 +22,7 @@ const router = createRouter({
     { path: '/', component: Home },
     { path: '/page1', component: Page1 },
     { path: '/page2', name: 'second', component: Page2 },
-    { path: '/oldpage2', redirect: { name: 'second' } }
+    { path: '/oldpage2', name: 'old-second', redirect: { name: 'second' } }
   ]
 });
 

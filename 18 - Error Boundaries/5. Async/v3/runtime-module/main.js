@@ -9,12 +9,10 @@ import ErrorBoundary from './ErrorBoundary.js';
 const app = Vue.createApp({
   components: { DividerComponent, ErrorBoundary },
   template: `
-    <div>
-      <h1>Error Boundaries</h1>
-      <error-boundary>
-        <divider-component />
-      </error-boundary>
-    </div>
+    <h1>Error Boundaries</h1>
+    <error-boundary>
+      <divider-component />
+    </error-boundary>
   `
 });
 app.mount('#app');

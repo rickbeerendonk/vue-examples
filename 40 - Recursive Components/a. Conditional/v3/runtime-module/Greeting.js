@@ -10,9 +10,7 @@ export default {
     };
   },
   template: `
-    <div>
-      <h1 @click="recursive = true">Hello World!</h1>
-      <Greeting v-if="recursive" />
-    </div>
+    <h1 @click="recursive = true">Hello World!</h1>
+    <Greeting v-if="recursive" />
   `
 };

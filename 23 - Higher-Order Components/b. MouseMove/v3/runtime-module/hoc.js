@@ -28,11 +28,9 @@ export default function (WrappedComponent) {
     },
     render() {
       return h(WrappedComponent, {
-        props: {
-          ...this.$props,
-          name:
-            '(x:' + this.mousePosition.x + ', y: ' + this.mousePosition.y + ')'
-        }
+        ...this.$props,
+        name:
+          '(x:' + this.mousePosition.x + ', y: ' + this.mousePosition.y + ')'
       });
     }
   };
