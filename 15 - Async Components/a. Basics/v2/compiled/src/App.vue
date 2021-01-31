@@ -23,12 +23,16 @@
 </template>
 
 <script>
+const GreetingDutch = () => import('./components/GreetingDutch.vue');
+const GreetingEnglish = () => import('./components/GreetingEnglish.vue');
+const GreetingSpanish = () => import('./components/GreetingSpanish.vue');
+
 export default {
   name: 'App',
   components: {
-    GreetingDutch: () => import('./components/GreetingDutch.vue'),
-    GreetingEnglish: () => import('./components/GreetingEnglish.vue'),
-    GreetingSpanish: () => import('./components/GreetingSpanish.vue')
+    GreetingDutch,
+    GreetingEnglish,
+    GreetingSpanish
   },
   data() {
     return {

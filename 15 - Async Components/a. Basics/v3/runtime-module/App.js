@@ -3,12 +3,16 @@
 
 import { defineAsyncComponent } from '../../../../../node_modules/vue_3/dist/vue.esm-browser.js';
 
+const GreetingDutch = () => import('./GreetingDutch.js');
+const GreetingEnglish = () => import('./GreetingEnglish.js');
+const GreetingSpanish = () => import('./GreetingSpanish.js');
+
 export default {
   name: 'App',
   components: {
-    GreetingDutch: defineAsyncComponent(() => import('./GreetingDutch.js')),
-    GreetingEnglish: defineAsyncComponent(() => import('./GreetingEnglish.js')),
-    GreetingSpanish: defineAsyncComponent(() => import('./GreetingSpanish.js'))
+    GreetingDutch: defineAsyncComponent(GreetingDutch),
+    GreetingEnglish: defineAsyncComponent(GreetingEnglish),
+    GreetingSpanish: defineAsyncComponent(GreetingSpanish)
   },
   data() {
     return {
