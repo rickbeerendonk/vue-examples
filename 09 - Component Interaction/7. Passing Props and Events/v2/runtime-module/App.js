@@ -13,7 +13,7 @@ export default {
   template: `
     <important-anchor
       href="https://vuejs.org/"
-      rel="noopener"
+      rel="noopener noreferrer"
       target="_blank"
       title="Everything about Vue"
     >
