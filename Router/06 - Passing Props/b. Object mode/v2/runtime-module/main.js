@@ -18,17 +18,13 @@ const Page1 = {
       b = {{ b }}
     </div>`
 };
-const Page2 = {
-  props: ['a', 'b'],
-  template: '<h2>Page 2 (a={{a}}, b={{b}})</h2>'
-};
 
 new Vue({
   router: new VueRouter({
     routes: [
       { path: '/', component: Home },
       { path: '/page1', component: Page1, props: { a: 1, b: 2 } },
-      { path: '/page2', component: Page2, props: { a: 3, b: 4 } }
+      { path: '/page2', component: Page1, props: { a: 3, b: 4 } }
     ]
   })
 }).$mount('#app');
