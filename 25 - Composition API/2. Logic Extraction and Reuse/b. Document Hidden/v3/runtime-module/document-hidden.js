@@ -7,13 +7,13 @@ import {
   onUnmounted
 } from '../../../../../node_modules/vue_3/dist/vue.esm-browser.js';
 
-export default function useMousePosition() {
+export default function useIsDocumentHidden() {
   const isHidden = ref(document.hidden);
 
-  const handleVisibilityChange = e => {
-    console.log(e);
+  function handleVisibilityChange() {
+    console.log('Hidden:', document.hidden);
     isHidden.value = document.hidden;
-  };
+  }
 
   onMounted(() => {
     document.addEventListener('visibilitychange', handleVisibilityChange);

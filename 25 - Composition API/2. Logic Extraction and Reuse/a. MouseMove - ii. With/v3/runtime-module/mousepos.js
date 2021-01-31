@@ -11,10 +11,10 @@ export default function useMousePosition() {
   const x = ref(0);
   const y = ref(0);
 
-  const handleMouseMove = e => {
+  function handleMouseMove(e) {
     x.value = e.pageX;
     y.value = e.pageY;
-  };
+  }
 
   onMounted(() => {
     document.addEventListener('mousemove', handleMouseMove);
