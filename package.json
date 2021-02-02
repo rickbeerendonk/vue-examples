@@ -63,7 +63,7 @@
     "vue-router_4": "npm:vue-router@4.0.3",
     "vue_2": "npm:vue@2.6.12",
     "vue_3": "npm:vue@3.0.5",
-    "vuex_3": "npm:vuex@3.6.0",
-    "vuex_4": "npm:vuex@4.0.0-rc.2"
+    "vuex_3": "npm:vuex@3.6.2",
+    "vuex_4": "npm:vuex@4.0.0"
   }
 }
