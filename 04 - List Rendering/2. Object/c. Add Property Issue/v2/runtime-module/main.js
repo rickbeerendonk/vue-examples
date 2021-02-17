@@ -16,10 +16,10 @@ new Vue({
   },
   methods: {
     add1() {
-      this.$set(this.obj, `prop ${itemId}`, itemId++);
+      this.$set(this.obj, `prop${itemId}`, itemId++);
     },
     add2() {
-      this.obj[`prop ${itemId}`] = itemId++;
+      this.obj[`prop${itemId}`] = itemId++;
     }
   }
 });

@@ -21,14 +21,14 @@ Vue.createApp({
       // because it uses Proxies (this here is a Proxy):
       //console.log(this);
 
-      this.set(this.obj, `prop ${itemId}`, itemId++);
+      this.set(this.obj, `prop${itemId}`, itemId++);
     },
     add2() {
       // RIGHT in Vue 3, was wrong in Vue 2,
       // because it uses Proxies (this here is a Proxy):
       //console.log(this);
 
-      this.obj[`prop ${itemId}`] = itemId++;
+      this.obj[`prop${itemId}`] = itemId++;
     }
   }
 }).mount('#app');
