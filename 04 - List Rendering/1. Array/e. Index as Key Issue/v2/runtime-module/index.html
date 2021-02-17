@@ -20,8 +20,8 @@
       <button @click="insertTop">Insert at Top</button>
 
       <ul>
-        <li v-for="(item, index) in items">
-          <input :key="index" :placeholder="item" />
+        <li v-for="(item, index) in items" :key="index">
+          <input :placeholder="item" />
         </li>
       </ul>
     </div>
