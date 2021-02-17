@@ -3,8 +3,6 @@
 
 import * as Vue from 'vue';
 
-console.log(Vue.version);
-
 Vue.createApp({
   template: `Hello Vue ${Vue.version}!` // No <div> needed.
 }).mount('#app1' /* // <div id="app1"></div> */);
