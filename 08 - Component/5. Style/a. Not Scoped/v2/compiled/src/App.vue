@@ -3,7 +3,7 @@
 
 <template>
   <div id="app">
-    <top />
+    <Top />
   </div>
 </template>
 
@@ -11,7 +11,6 @@
 import Top from './components/Top.vue';
 
 export default {
-  name: 'App',
   components: {
     Top
   }
