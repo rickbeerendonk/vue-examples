@@ -10,5 +10,5 @@ export default {
       this.$emit('updated');
     }
   },
-  template: '<button @click="buttonClicked()">Click</button>'
+  template: '<button @click="buttonClicked">Click</button>'
 };
