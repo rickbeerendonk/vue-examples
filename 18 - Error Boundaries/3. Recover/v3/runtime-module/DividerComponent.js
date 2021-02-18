@@ -2,7 +2,6 @@
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
 export default {
-  name: 'divider-component',
   data() {
     return {
       numerator: 3,

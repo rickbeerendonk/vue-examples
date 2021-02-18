@@ -2,15 +2,16 @@
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
 export default {
-  name: 'error-boundary',
   data() {
     return {
       error: null
     };
   },
-  errorCaptured(err /*, vm, info */) {
-    // Component must have a name defined to be able to show it.
+  errorCaptured(err, instance, info) {
     this.error = err;
+
+    console.log('Component:', instance);
+    console.log('Info:', info);
 
     // Stop the error from propagating.
     return false;

@@ -10,9 +10,9 @@ const app = Vue.createApp({
   components: { DividerComponent, ErrorBoundary },
   template: `
     <h1>Error Boundaries</h1>
-    <error-boundary>
-      <divider-component />
-    </error-boundary>
+    <ErrorBoundary>
+      <DividerComponent />
+    </ErrorBoundary>
   `
 });
 app.mount('#app');

@@ -2,7 +2,6 @@
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
 export default {
-  name: 'error-boundary',
   data() {
     return {
       error: null

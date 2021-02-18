@@ -2,14 +2,12 @@
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
 export default {
-  name: 'error-boundary-area',
   data() {
     return {
       error: null
     };
   },
   errorCaptured(err) {
-    // Component must have a name defined to be able to show it.
     this.error = err;
 
     // Don't stop the error from propagating.

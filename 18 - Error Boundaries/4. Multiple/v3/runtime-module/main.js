@@ -10,13 +10,13 @@ import ErrorBoundaryRoot from './ErrorBoundaryRoot.js';
 const app = Vue.createApp({
   components: { DividerComponent, ErrorBoundaryArea, ErrorBoundaryRoot },
   template: `
-    <error-boundary-root>
+    <ErrorBoundaryRoot>
       <p style="color: gray">See console for side-effect</p>
       <h1>Error Boundaries</h1>
-        <error-boundary-area>
-          <divider-component />
-        </error-boundary-area>
-    </error-boundary-root>
+      <ErrorBoundaryArea>
+        <DividerComponent />
+      </ErrorBoundaryArea>
+    </ErrorBoundaryRoot>
   `
 });
 app.mount('#app');

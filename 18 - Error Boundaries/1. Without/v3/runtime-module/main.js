@@ -9,7 +9,7 @@ const app = Vue.createApp({
   components: { DividerComponent },
   template: `
     <h1>Without Error Boundary</h1>
-    <divider-component />
+    <DividerComponent />
   `
 });
 app.mount('#app');
