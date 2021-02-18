@@ -22,6 +22,7 @@ export default {
     logEvent('setup()', this);
   },
   data() {
+    logEvent('data()', this);
     return {
       count: 0
     };
