@@ -6,13 +6,13 @@
     <meta charset="utf-8" />
     <meta name="author" content="Rick Beerendonk" />
 
-    <title>Conditional Rendering - Else</title>
+    <title>Conditional Rendering - Else - Correct</title>
     <link rel="stylesheet" href="../../../../resources/oblicum.css" />
     <link rel="stylesheet" href="../../../../resources/oblicum-vue3.css" />
   </head>
   <body>
     <div id="app">
-      <span v-if="!show">Invisible (not rendered!)</span>
+      <span v-if="show">Invisible (not rendered!)</span>
       <!-- Don't use something in between v-if and v-else -->
       <span v-else>Visible</span>
     </div>
