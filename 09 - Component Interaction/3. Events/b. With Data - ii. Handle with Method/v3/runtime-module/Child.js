@@ -6,6 +6,7 @@
 export default {
   name: 'Child',
   props: ['name'],
+  emits: ['change'],
   methods: {
     changed(e) {
       this.$emit('change', e.target.value);

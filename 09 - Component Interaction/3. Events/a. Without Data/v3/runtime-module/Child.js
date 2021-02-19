@@ -5,6 +5,7 @@
 
 export default {
   name: 'Child',
+  emits: ['updated'],
   methods: {
     buttonClicked() {
       this.$emit('updated');
