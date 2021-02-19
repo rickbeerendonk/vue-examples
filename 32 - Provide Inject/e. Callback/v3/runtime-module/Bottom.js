@@ -4,5 +4,5 @@
 export default {
   name: 'Bottom',
   inject: ['color'],
-  template: '<h1 v-bind:style="{color: color.value}">Bottom</h1>'
+  template: '<h1 :style="{color: color.value}">Bottom</h1>'
 };

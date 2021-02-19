@@ -44,7 +44,7 @@ export default {
       </label>
 
       <div style="background: bisque">
-        <component v-bind:is="greetingLanguage"></component>
+        <component :is="greetingLanguage"></component>
       </div>
     </div>
   `

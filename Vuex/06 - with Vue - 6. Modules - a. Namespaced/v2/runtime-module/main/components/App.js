@@ -33,7 +33,7 @@ export default {
 
       <div style="background: bisque">
         <!-- No keep-alive needed! -->
-        <component v-bind:is="areaComponent"></component>
+        <component :is="areaComponent"></component>
       </div>
     </div>
   `

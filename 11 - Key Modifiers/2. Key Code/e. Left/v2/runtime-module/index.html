@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="app">
-      <input :autofocus="'autofocus'" v-on:keyup.left="keyup" />
+      <input :autofocus="'autofocus'" @keyup.left="keyup" />
 
       <ul style="background-color: lightgray">
         <li v-for="item in result">{{ item }}</li>
