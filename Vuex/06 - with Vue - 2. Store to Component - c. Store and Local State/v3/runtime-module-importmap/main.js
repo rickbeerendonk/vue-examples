@@ -19,7 +19,7 @@ const App = {
   },
   computed: {
     // Copy all from store
-    ...mapState({ name: state => state.name }),
+    ...mapState(['name']),
     // Local computed property
     previousYear() {
       return this.year - 1;
