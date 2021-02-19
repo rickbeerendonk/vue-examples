@@ -20,6 +20,8 @@ const App = {
     // Alias
     year: 'year'
   }),
+  // Or:
+  // computed: mapState(['name', 'year']),
   template: `
     <ul>
       <li>Name: {{ name }}</li>
