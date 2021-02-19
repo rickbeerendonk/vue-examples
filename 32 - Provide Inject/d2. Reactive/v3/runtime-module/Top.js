@@ -16,6 +16,7 @@ export default {
     };
   },
   provide() {
+    // Reactive using computed()
     return {
       color: computed(() => this.color)
     };
