@@ -34,19 +34,13 @@
       <p v-cloak>With v-cloak: {{ greeting }}</p>
     </div>
 
-    <script
-      defer
-      src="../../../../node_modules/es-module-shims/dist/es-module-shims.js"
-    ></script>
-    <!-- Without shim: <script type="importmap"> -->
-    <script type="importmap-shim">
+    <script type="importmap">
       {
         "imports": {
           "vue": "../../../../../node_modules/vue_2/dist/vue.esm.browser.js"
         }
       }
     </script>
-    <!-- Without shim: <script type="module" src="main.js"> -->
-    <script type="module-shim" src="main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

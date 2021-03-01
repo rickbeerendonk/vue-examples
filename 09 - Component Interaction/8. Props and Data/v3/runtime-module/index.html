@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2020 Rick Beerendonk -->
+<!-- Copyright © 2021 Rick Beerendonk -->
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="author" content="Rick Beerendonk" />
 
-    <title>Data Binding - Data to View - Content - Partial</title>
+    <title>Component Interaction - Properties and Data</title>
     <link rel="stylesheet" href="../../../../../resources/oblicum.css" />
     <link rel="stylesheet" href="../../../../../resources/oblicum-vue3.css" />
   </head>
+
   <body>
     <div id="app">
-      <span>Greeting: {{ greeting }}</span>
+      <h1>Parent</h1>
+      <div>
+        <label for="value">Value: </label>
+        <input if="value" v-model="value" />
+      </div>
+      <child-component :propValue="value" />
     </div>
 
-    <script type="importmap">
-      {
-        "imports": {
-          "vue": "../../../../../node_modules/vue_3/dist/vue.esm-browser.js"
-        }
-      }
-    </script>
     <script type="module" src="main.js"></script>
   </body>
 </html>
