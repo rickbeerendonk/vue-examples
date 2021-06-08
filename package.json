@@ -58,7 +58,7 @@
   "dependencies": {
     "es-module-shims": "0.9.0",
     "http-vue-loader": "1.4.2",
-    "serve": "11.3.2",
+    "serve": "12.0.0",
     "vue-router_3": "npm:vue-router@3.4.9",
     "vue-router_4": "npm:vue-router@4.0.8",
     "vue_2": "npm:vue@2.6.12",
