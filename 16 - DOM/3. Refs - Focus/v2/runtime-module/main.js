@@ -1,5 +1,5 @@
 /*! European Union Public License version 1.2 !*/
-/*! Copyright © 2020 Rick Beerendonk          !*/
+/*! Copyright © 2021 Rick Beerendonk          !*/
 
 import Vue from '../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
@@ -10,7 +10,7 @@ new Vue({
   },
   mounted() {
     // Use $refs to get direct DOM access
-    this.$refs.input.select();
+    this.$refs.input.focus();
   },
   methods: {
     changed(e) {
