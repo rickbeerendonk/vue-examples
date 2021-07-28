@@ -6,7 +6,7 @@ import * as Vue from 'vue';
 Vue.createApp({
   data() {
     return {
-      greeting: 'Hello World!'
+      greeting: 'Hello <i>World</i>!'
     };
   }
 }).mount('#app');
