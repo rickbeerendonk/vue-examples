@@ -11,7 +11,7 @@ export default {
   },
   template: `
     <div>
-      <h1 @click="recursive = true">Hello World!</h1>
+      <button @click="recursive = true" :disabled="recursive">Hello World!</button>
       <Greeting v-if="recursive" />
     </div>
   `
