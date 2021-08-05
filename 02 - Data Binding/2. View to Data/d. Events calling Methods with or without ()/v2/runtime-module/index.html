@@ -14,13 +14,13 @@
   </head>
   <body>
     <div id="app">
-      <h1 @click="clicked">
+      <button @click="clicked">
         This has been clicked {{count}} times! -- clicked
-      </h1>
+      </button>
 
-      <h1 @click="clicked()">
+      <button @click="clicked()">
         This has been clicked {{count}} times! -- clicked()
-      </h1>
+      </button>
 
       <div>click parameters: {{ clickParams }}</div>
     </div>

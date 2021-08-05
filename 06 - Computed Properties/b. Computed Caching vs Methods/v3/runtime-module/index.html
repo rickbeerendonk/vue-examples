@@ -18,8 +18,12 @@
         Both have the same dependency (Counter 1 only).
       </p>
 
-      <h1 v-on:click="count1++">Counter 1: Clicked {{count1}} times!</h1>
-      <h1 v-on:click="count2++">Counter 2: Clicked {{count2}} times!</h1>
+      <button v-on:click="count1++">
+        Counter 1: Clicked {{count1}} times!
+      </button>
+      <button v-on:click="count2++">
+        Counter 2: Clicked {{count2}} times!
+      </button>
 
       <ul style="font-variant-numeric: tabular-nums">
         <li>{{ computedCount1 }} = Computed property last update</li>

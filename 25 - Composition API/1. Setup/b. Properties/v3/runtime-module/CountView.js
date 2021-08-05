@@ -26,5 +26,5 @@ export default {
     };
   },
   template:
-    '<h1 @click="increment">This has been clicked {{ state.count }} times!</h1>'
+    '<button @click="increment">This has been clicked {{ state.count }} times!</button>'
 };

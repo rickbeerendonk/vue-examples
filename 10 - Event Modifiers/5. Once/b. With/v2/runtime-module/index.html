@@ -12,7 +12,9 @@
   </head>
   <body>
     <div id="app">
-      <h1 @click.once="count++">This has been clicked {{count}} times!</h1>
+      <button @click.once="count++">
+        This has been clicked {{count}} times!
+      </button>
     </div>
 
     <script type="module" src="main.js"></script>
