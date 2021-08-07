@@ -18,9 +18,11 @@ export default {
     EditBox,
     Greeting
   },
-  data: () => ({
-    name: 'World'
-  }),
+  data() {
+    return {
+      name: 'World'
+    };
+  },
   methods: {
     changed: function (value) {
       this.name = value;
