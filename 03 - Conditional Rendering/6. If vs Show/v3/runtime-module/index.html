@@ -11,10 +11,14 @@
     <link rel="stylesheet" href="../../../../resources/oblicum-vue3.css" />
   </head>
   <body>
-    <h1>Check the rendered elements in the browser's devtools.</h1>
+    <p style="color: gray">
+      Check the rendered elements in the browser's devtools.
+    </p>
     <div id="app">
       <span v-if="show">v-if: Invisible (not rendered)</span>
       <span v-show="show">v-show: Invisible (rendered)</span>
+      <!-- v-else can't be used with v-show -->
+      <!-- <span v-else>Error!</span> -->
     </div>
 
     <script type="module" src="main.js"></script>
