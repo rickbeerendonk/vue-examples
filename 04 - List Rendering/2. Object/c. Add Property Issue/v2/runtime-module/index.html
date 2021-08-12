@@ -16,7 +16,7 @@
       <button @click="add2">Add property (wrong in Vue 3)</button>
 
       <ul>
-        <li v-for="value in obj">{{ value }}</li>
+        <li v-for="(value, prop) in obj">{{ prop }} = {{ value }}</li>
       </ul>
     </div>
 
