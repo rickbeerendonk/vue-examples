@@ -10,7 +10,7 @@ Vue.createApp({
     };
   },
   computed: {
-    uppercaseGreeting: function () {
+    uppercaseGreeting() {
       return this.greeting.toUpperCase();
     }
   }
