@@ -3,11 +3,11 @@
 
 export default {
   // name required for recursive components
-  name: 'Greeting',
+  name: 'GreetingComponent',
   template: `
     <div>
       <h1>Hello World!</h1>
-      <Greeting />
+      <greeting-component />
     </div>
   `
 };

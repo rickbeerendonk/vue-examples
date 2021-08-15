@@ -3,7 +3,7 @@
 
 export default {
   // name required for recursive components
-  name: 'Greeting',
+  name: 'GreetingComponent',
   data() {
     return {
       recursive: false
@@ -11,6 +11,6 @@ export default {
   },
   template: `
     <button @click="recursive = true" :disabled="recursive">Hello World!</button>
-    <Greeting v-if="recursive" />
+    <greeting-component v-if="recursive" />
   `
 };

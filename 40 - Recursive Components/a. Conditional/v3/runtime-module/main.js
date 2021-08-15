@@ -3,12 +3,12 @@
 
 import * as Vue from '../../../../node_modules/vue_3/dist/vue.esm-browser.js';
 
-import Greeting from './Greeting.js';
+import GreetingComponent from './GreetingComponent.js';
 
 const app = Vue.createApp({
   components: {
-    Greeting
+    GreetingComponent
   },
-  template: '<Greeting />'
+  template: '<greeting-component />'
 });
 app.mount('#app');

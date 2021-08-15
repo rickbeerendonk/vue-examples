@@ -3,11 +3,11 @@
 
 import Vue from '../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
-import Greeting from './Greeting.js';
+import GreetingComponent from './GreetingComponent.js';
 
 new Vue({
   components: {
-    Greeting
+    GreetingComponent
   },
-  template: '<Greeting />'
+  template: '<greeting-component />'
 }).$mount('#app');
