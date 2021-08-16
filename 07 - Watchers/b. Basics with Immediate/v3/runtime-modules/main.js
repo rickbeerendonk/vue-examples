@@ -1,0 +1,21 @@
+/*! European Union Public License version 1.2 !*/
+/*! Copyright © 2020 Rick Beerendonk          !*/
+
+import * as Vue from '../../../../node_modules/vue_3/dist/vue.esm-browser.js';
+
+Vue.createApp({
+  data() {
+    return {
+      count: 0,
+      change: ''
+    };
+  },
+  watch: {
+    count: {
+      handler(newValue, oldValue) {
+        this.change = `Changed from ${oldValue} to ${newValue}`;
+      },
+      immediate: true // Force on initialisation
+    }
+  }
+}).mount('#app');
