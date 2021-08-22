@@ -2,7 +2,9 @@
 <!-- Copyright © 2020 Rick Beerendonk          -->
 
 <template>
-  <h3>Bottom</h3>
+  <div>
+    <h3>Bottom</h3>
+  </div>
 </template>
 
 <script>
@@ -11,4 +13,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+div {
+  background-color: lightblue;
+}
+</style>
