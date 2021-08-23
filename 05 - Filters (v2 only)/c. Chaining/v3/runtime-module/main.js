@@ -6,14 +6,14 @@ import * as Vue from '../../../../../node_modules/vue_3/dist/vue.esm-browser.js'
 Vue.createApp({
   // Use a method instead of a filter
   methods: {
-    reverse: function (value) {
+    reverse(value) {
       if (!value) {
         return '';
       }
 
       return value.split('').reverse().join('');
     },
-    titlecase: function (value) {
+    titlecase(value) {
       if (!value) {
         return '';
       }
