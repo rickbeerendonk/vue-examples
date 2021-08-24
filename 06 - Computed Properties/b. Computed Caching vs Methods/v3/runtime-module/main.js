@@ -11,12 +11,12 @@ Vue.createApp({
     };
   },
   computed: {
-    computedCount1: function () {
+    computedCount1() {
       return Date.now() + this.count1 - this.count1;
     }
   },
   methods: {
-    methodCount1: function () {
+    methodCount1() {
       return Date.now() + this.count1 - this.count1;
     }
   }
