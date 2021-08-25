@@ -7,7 +7,7 @@ export default {
   name: 'GreetingComponent',
   props: ['name'],
   computed: {
-    computedName: function () {
+    computedName() {
       return this.name.trim().toUpperCase();
     }
   },
