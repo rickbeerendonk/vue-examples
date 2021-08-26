@@ -10,15 +10,15 @@ const app = Vue.createApp({
     };
   },
   methods: {
-    parentAtTargetClicked: function (event) {
+    parentAtTargetClicked(event) {
       this.result.push(`${event.target.id} received event in at target fase.`);
     },
-    parentBubblingClicked: function (event) {
+    parentBubblingClicked(event) {
       this.result.push(
         `${event.currentTarget.id} received event for ${event.target.id} in bubbling fase.`
       );
     },
-    childClicked: function (event) {
+    childClicked(event) {
       this.result.push(`${event.target.id} received event.`);
     }
   }

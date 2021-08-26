@@ -10,17 +10,17 @@ const app = Vue.createApp({
     };
   },
   methods: {
-    parentClicked: function (event) {
+    parentClicked(event) {
       this.result.push(
         `${event.currentTarget.id} received event for ${event.target.id}.`
       );
     },
-    childClicked: function (event) {
+    childClicked(event) {
       this.result.push(
         `${event.target.id} received event (Standard) -- with stop.`
       );
     },
-    childSelfClicked: function (event) {
+    childSelfClicked(event) {
       this.result.push(`${event.target.id} received event (Self).`);
     }
   }
