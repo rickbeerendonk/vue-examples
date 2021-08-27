@@ -15,7 +15,7 @@ const app = Vue.createApp({
     name2: 'second'
   }),
   methods: {
-    handleSwitch: function () {
+    handleSwitch() {
       if (this.name1 === 'first') {
         this.name1 = 'second';
         this.name2 = 'first';
