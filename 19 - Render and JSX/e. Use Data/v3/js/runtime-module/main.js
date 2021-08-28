@@ -9,7 +9,7 @@ Vue.createApp({
       name: 'Vue'
     };
   },
-  render: function () {
+  render() {
     return Vue.h('h1', ['Hello ', this.name, '!']);
   }
 }).mount('#app');
