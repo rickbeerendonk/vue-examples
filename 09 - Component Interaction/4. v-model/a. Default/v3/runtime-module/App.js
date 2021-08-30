@@ -10,7 +10,7 @@ export default {
   components: {
     Child
   },
-  data: function () {
+  data() {
     return {
       greetingText: 'World'
     };
@@ -20,7 +20,7 @@ export default {
   //    v-bind:modelValue="greetingText"
   //    v-on:['update:modelValue']="greetingText = $event" />
   template: `
-    <child v-model="greetingText" />
+    <child v-model="greetingText" v-model:foo="..." />
     <h1>Hello {{ greetingText }}</h1>
     
     <hr />
