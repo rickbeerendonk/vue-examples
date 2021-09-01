@@ -21,7 +21,7 @@ export default {
     }
   },
   template: `
-    <Child :name="greetingText" @change="greetingChanged"></Child>
+    <child :name="greetingText" @change="greetingChanged"></Child>
     <h1>Hello {{ greetingText }}</h1>
   `
 };

@@ -16,7 +16,7 @@ export default {
     };
   },
   template: `
-    <Child :name="greetingText" @change="greetingText = $event"></Child>
+    <child :name="greetingText" @change="greetingText = $event"></Child>
     <h1>Hello {{ greetingText }}</h1>
   `
 };

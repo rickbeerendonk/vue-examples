@@ -16,7 +16,7 @@ export default {
     };
   },
   template: `
-    <Child :name="greetingText"></Child>
+    <child :name="greetingText"></Child>
     <h1>Hello {{ greetingText }}</h1>
   `
 };
