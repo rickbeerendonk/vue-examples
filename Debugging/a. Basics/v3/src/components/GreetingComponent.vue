@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'Greeting',
+  name: 'GreetingComponent',
   props: {
     name: {
       type: String,

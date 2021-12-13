@@ -14,8 +14,9 @@ export default {
       required: true
     }
   },
+  emits: ['change'],
   methods: {
-    changed: function (e) {
+    changed(e) {
       this.$emit('change', e.target.value);
     }
   }

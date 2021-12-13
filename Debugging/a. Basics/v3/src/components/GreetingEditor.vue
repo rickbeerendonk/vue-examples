@@ -4,19 +4,19 @@
 <template>
   <div>
     <edit-box :value="name" @change="changed" />
-    <greeting :name="name" />
+    <greeting-component :name="name" />
   </div>
 </template>
 
 <script>
 import EditBox from './EditBox.vue';
-import Greeting from './Greeting.vue';
+import GreetingComponent from './GreetingComponent.vue';
 
 export default {
   name: 'GreetingEditor',
   components: {
     EditBox,
-    Greeting
+    GreetingComponent
   },
   data() {
     return {
@@ -24,7 +24,7 @@ export default {
     };
   },
   methods: {
-    changed: function (value) {
+    changed(value) {
       this.name = value;
     }
   }

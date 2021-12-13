@@ -5,16 +5,16 @@
     "es6": true,
     "commonjs": true
   },
+  "parser": "vue-eslint-parser",
   "parserOptions": {
-    "parser": "babel-eslint",
-    "ecmaVersion": 2021,
+    "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
     }
   },
   "plugins": ["vue", "prettier"],
-  "extends": ["eslint:recommended", "plugin:vue/recommended", "prettier/vue"],
+  "extends": ["eslint:recommended", "plugin:vue/vue3-recommended", "prettier"],
   "rules": {
     "no-debugger": 1,
     "semi": [2, "always"],
