@@ -10,29 +10,25 @@ let itemId = 4;
 
 createApp({
   setup() {
-    const items = ref(['one', 'two', 'three']);
-
-    const overwrite1 = () => {
+    const obj = ref({
+      prop1: true,
+      prop2: 'two',
+      prop3: 3
+    });
+    const add1 = () => {
       // WRONG in Vue 3 Composition API, was right in Vue 2, because:
       // - this is not available in setup
       // - this.set() exists, but there is no standalone set function
-      // set(this.items, 0, itemId++);
+      // set(this.obj, `prop${itemId}`, itemId++);
     };
-    const overwrite2 = () => {
-      items.value.splice(0, 1, itemId++);
-    };
-    const overwrite3 = () => {
-      const [, ...rest] = items.value;
-      items.value = [itemId++, ...rest];
-    };
-    const overwrite4 = () => {
+    const add2 = () => {
       // RIGHT in Vue 3, was wrong in Vue 2,
       // because it uses Proxies (this here is a Proxy):
       //console.log(this);
 
-      items.value[0] = itemId++;
+      obj.value[`prop${itemId}`] = itemId++;
     };
 
-    return { items, overwrite1, overwrite2, overwrite3, overwrite4 };
+    return { obj, add1, add2 };
   }
 }).mount('#app');
