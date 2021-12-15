@@ -15,6 +15,6 @@ createApp({
       change.value = `Changed from ${oldValue} to ${newValue}`;
     });
 
-    return { count, change, watch };
+    return { count, change };
   }
 }).mount('#app');
