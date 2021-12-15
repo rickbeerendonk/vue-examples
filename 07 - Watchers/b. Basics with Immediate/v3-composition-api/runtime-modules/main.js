@@ -17,7 +17,7 @@ createApp({
         change.value = `Changed from ${oldValue} to ${newValue}`;
       },
       {
-        immediate: true // Force on initialisation}
+        immediate: true // Force on initialisation
       }
     );
 
