@@ -9,7 +9,7 @@ Examples for [Vue.js](https://vuejs.org).
 Install dependencies first, then run:
 
 1. Open command line (Windows) or terminal (macOS) in the root folder
-2. Run `npm install`
+2. Run `npm install --legacy-peer-deps`
 3. Run `npm start`. Now the server will run and the browser will open.
 4. In the browser, browse to the folder of the example you want to run and it will open automatically.
 
