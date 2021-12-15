@@ -1,15 +1,11 @@
 /*! European Union Public License version 1.2 !*/
-/*! Copyright © 2020 Rick Beerendonk          !*/
+/*! Copyright © 2021 Rick Beerendonk          !*/
 
-import {
-  createApp,
-  ref
-} from '../../../../../node_modules/vue_3/dist/vue.esm-browser.js';
+import { createApp } from '../../../../../node_modules/vue_3/dist/vue.esm-browser.js';
 
 createApp({
   setup() {
-    const greeting = ref('Hello World!');
-
-    return { greeting };
+    // Return data available for rest of the component
+    return { greeting: 'Hello World!' };
   }
 }).mount('#app');
