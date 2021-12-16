@@ -103,6 +103,16 @@ export default {
     //
     // Note: Not called during server-side rendering.
     logEvent('unmounted()', this);
+  },
+  renderTracked(e) {
+    // Called
+    // - when virtual DOM re-render is tracked.
+    logEvent(`renderTracked(${JSON.stringify(e)})`, this);
+  },
+  renderTriggered(e) {
+    // Called
+    // - when virtual DOM re-render is triggered.
+    logEvent(`renderTriggered(${JSON.stringify(e)})`, this);
   }
 };
 </script>

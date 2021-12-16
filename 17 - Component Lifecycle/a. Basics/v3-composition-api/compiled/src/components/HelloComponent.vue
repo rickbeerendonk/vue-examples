@@ -6,6 +6,8 @@
 </template>
 
 <script>
+/* eslint-disable no-unused-vars */
+
 import {
   nextTick,
   ref,
@@ -16,7 +18,9 @@ import {
   onActivated,
   onDeactivated,
   onBeforeUnmount,
-  onUnmounted
+  onUnmounted,
+  onRenderTracked,
+  onRenderTriggered
 } from 'vue';
 import { logEvent } from '../utils.js';
 
@@ -64,7 +68,7 @@ export default {
       // - after a data change causes the virtual DOM to be re-rendered and patched.
       //
       // Note: No guarantee all child components have also been re-rendered.
-      //       Use vm.$nextTick inside of updated to wait for all children to be re-rendered:
+      //       Use nextTick inside of updated to wait for all children to be re-rendered:
       nextTick(function () {
         logEvent('onUpdated()', props, { count: count.value });
 
@@ -104,7 +108,24 @@ export default {
       // Note: Not called during server-side rendering.
       logEvent('onUnmounted()', props, { count: count.value });
     });
+    onRenderTracked(e => {
+      // Called
+      // - when virtual DOM re-render is tracked.
+      //
+      // Note: Tells you what operation tracked the component
 
+      //logEvent(`onRenderTracked(${JSON.stringify(e)})`, this);
+      logEvent(`onRenderTracked(e)`, props, { count: count.value });
+    });
+    onRenderTriggered(e => {
+      // Called
+      // - when virtual DOM re-render is triggered.
+      //
+      // Note: Tells you what operation triggered the re-rendering
+
+      //logEvent(`onRenderTriggered(${JSON.stringify(e)})`, this);
+      logEvent(`onRenderTriggered(e)`, props, { count: count.value });
+    });
     return { count };
   }
 };
