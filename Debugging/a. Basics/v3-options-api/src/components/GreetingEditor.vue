@@ -3,8 +3,8 @@
 
 <template>
   <div>
-    <edit-box :value="name" @change="changed" />
-    <greeting-component :name="name" />
+    <EditBox :value="name" @change="changed" />
+    <GreetingComponent :name="name" />
   </div>
 </template>
 

@@ -3,19 +3,12 @@
 
 <template>
   <div id="app">
-    <greeting-editor value="Vue" />
+    <GreetingEditor value="Vue" />
   </div>
 </template>
 
-<script>
+<script setup>
 import GreetingEditor from './components/GreetingEditor.vue';
-
-export default {
-  name: 'App',
-  components: {
-    GreetingEditor
-  }
-};
 </script>
 
 <style>
