@@ -6,4 +6,9 @@ import { createApp } from '../../../../node_modules/vue_3/dist/vue.esm-browser.j
 import App from './App.js';
 
 // Bootstrap
-createApp(App).mount('#app');
+const app = createApp(App);
+
+// Temporarily
+//app.config.unwrapInjectedRef = true;
+
+app.mount('#app');
