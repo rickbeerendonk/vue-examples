@@ -1,5 +1,7 @@
 /*! European Union Public License version 1.2 !*/
-/*! Copyright © 2020 Rick Beerendonk          !*/
+/*! Copyright © 2021 Rick Beerendonk          !*/
+
+import { ref } from '../../../../../node_modules/vue_3/dist/vue.esm-browser.js';
 
 import Child from './Child.js';
 
@@ -10,9 +12,10 @@ export default {
   components: {
     Child
   },
-  data() {
+  setup() {
+    const greetingText = ref('World');
     return {
-      greetingText: 'World'
+      greetingText
     };
   },
   // Short for:
@@ -20,12 +23,12 @@ export default {
   //    v-bind:modelValue="greetingText"
   //    v-on:['update:modelValue']="greetingText = $event" />
   template: `
-    <child v-model="greetingText" v-model:foo="..." />
+    <child v-model="greetingText" />
     <h1>Hello {{ greetingText }}</h1>
     
     <hr />
     <child
       v-bind:modelValue="greetingText"
-      v-on:['update:modelValue']="greetingText = $event" />
+      v-on:update:modelValue="greetingText = $event" />
   `
 };
