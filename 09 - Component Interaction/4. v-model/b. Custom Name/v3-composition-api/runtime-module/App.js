@@ -16,17 +16,13 @@ export default {
     const greetingText = ref('World');
     return { greetingText };
   },
-  // Short for:
-  //  <child
-  //    v-bind:modelValue="greetingText"
-  //    v-on:['update:modelValue']="greetingText = $event" />
   template: `
-    <child v-model="greetingText" />
+    <child v-model:custom-name="greetingText" />
     <h1>Hello {{ greetingText }}</h1>
     
     <hr />
     <child
-      v-bind:modelValue="greetingText"
-      v-on:update:modelValue="greetingText = $event" />
+      v-bind:custom-name="greetingText"
+      v-on:['update:custom-name']="greetingText = $event" />
   `
 };
