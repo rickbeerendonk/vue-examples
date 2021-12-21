@@ -12,9 +12,9 @@ new Vue({
   },
   template: `
     <div>
-      <greeting-component name="World" />
-      <greeting-component :name="123" />
-      <greeting-component :name="true" />
+      <GreetingComponent name="World" />
+      <GreetingComponent :name="123" />
+      <GreetingComponent :name="true" />
     </div>
   `
 });

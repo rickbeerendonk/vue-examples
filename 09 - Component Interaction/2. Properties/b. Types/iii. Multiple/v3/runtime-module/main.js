@@ -10,9 +10,9 @@ const app = Vue.createApp({
     GreetingComponent
   },
   template: `
-    <greeting-component name="World" />
-    <greeting-component :name="123" />
-    <greeting-component :name="true" />
+    <GreetingComponent name="World" />
+    <GreetingComponent :name="123" />
+    <GreetingComponent :name="true" />
   `
 });
 app.mount('#app');
