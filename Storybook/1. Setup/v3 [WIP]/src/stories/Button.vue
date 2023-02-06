@@ -1,5 +1,7 @@
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
+  <button type="button" :class="classes" @click="onClick" :style="style">
+    {{ label }}
+  </button>
 </template>
 
 <script>
@@ -12,21 +14,21 @@ export default {
   props: {
     label: {
       type: String,
-      required: true,
+      required: true
     },
     primary: {
       type: Boolean,
-      default: false,
+      default: false
     },
     size: {
       type: String,
       validator: function (value) {
         return ['small', 'medium', 'large'].indexOf(value) !== -1;
-      },
+      }
     },
     backgroundColor: {
-      type: String,
-    },
+      type: String
+    }
   },
 
   emits: ['click'],
@@ -38,15 +40,15 @@ export default {
         'storybook-button': true,
         'storybook-button--primary': props.primary,
         'storybook-button--secondary': !props.primary,
-        [`storybook-button--${props.size || 'medium'}`]: true,
+        [`storybook-button--${props.size || 'medium'}`]: true
       })),
       style: computed(() => ({
-        backgroundColor: props.backgroundColor,
+        backgroundColor: props.backgroundColor
       })),
       onClick() {
         emit('click');
       }
-    }
-  },
+    };
+  }
 };
 </script>

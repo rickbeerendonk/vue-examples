@@ -17,21 +17,18 @@ module.exports = {
   },
   devtool: 'source-map',
   devServer: {
-    contentBase: './dist',
+    client: {
+      logging: 'error',
+      overlay: true
+    },
     port: 9100,
-    hot: true,
-    overlay: true,
-    stats: 'errors-only'
+    static: {
+      directory: path.join(__dirname, '/dist')
+    }
   },
   mode: 'development',
   module: {
     rules: [
-      {
-        enforce: 'pre',
-        test: /\.js$/,
-        exclude: file => /node_modules/.test(file) && !/\.vue\.js/.test(file),
-        loader: 'eslint-loader'
-      },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']

@@ -16,7 +16,7 @@
     "@vue/cli-plugin-babel": "~4.5.11",
     "@vue/cli-plugin-eslint": "~4.5.11",
     "@vue/cli-service": "~4.5.11",
-    "babel-eslint": "^10.1.0",
+    "@babel/eslint-parser": "7.19.1",
     "eslint": "^7.18.0",
     "eslint-plugin-vue": "^7.5.0",
     "vue-template-compiler": "^2.6.11"
@@ -31,7 +31,7 @@
       "eslint:recommended"
     ],
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "@babel/eslint-parser"
     },
     "rules": {}
   },
