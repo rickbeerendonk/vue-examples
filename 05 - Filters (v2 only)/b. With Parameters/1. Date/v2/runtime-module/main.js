@@ -14,7 +14,9 @@ new Vue({
       return value.toLocaleDateString(locales);
     }
   },
-  data: {
-    moment: new Date()
+  data() {
+    return {
+      moment: new Date()
+    };
   }
 });

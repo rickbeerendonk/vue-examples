@@ -5,9 +5,11 @@ import Vue from '../../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 new Vue({
   el: '#app',
-  data: {
-    option1: 'Hello',
-    option2: 'Bye',
-    selected: ''
+  data() {
+    return {
+      option1: 'Hello',
+      option2: 'Bye',
+      selected: ''
+    };
   }
 });

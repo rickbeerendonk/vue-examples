@@ -8,7 +8,9 @@ Vue.config.performance = true;
 
 new Vue({
   el: '#app',
-  data: {
-    greeting: 'Hello World!'
+  data() {
+    return {
+      greeting: 'Hello World!'
+    };
   }
 });

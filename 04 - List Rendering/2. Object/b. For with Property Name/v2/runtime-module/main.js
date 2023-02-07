@@ -5,11 +5,13 @@ import Vue from '../../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 new Vue({
   el: '#app',
-  data: {
-    object: {
-      prop2: 'two',
-      prop3: 3,
-      prop1: true
-    }
+  data() {
+    return {
+      object: {
+        prop2: 'two',
+        prop3: 3,
+        prop1: true
+      }
+    };
   }
 });

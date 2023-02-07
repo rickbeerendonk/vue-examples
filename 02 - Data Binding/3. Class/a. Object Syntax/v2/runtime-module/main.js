@@ -5,9 +5,11 @@ import Vue from '../../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 new Vue({
   el: '#app',
-  data: {
-    isDynamic1: false,
-    isDynamic2: true
+  data() {
+    return {
+      isDynamic1: false,
+      isDynamic2: true
+    };
   },
   methods: {
     clicked() {

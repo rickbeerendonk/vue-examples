@@ -5,13 +5,15 @@ import Vue from '../../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 new Vue({
   el: '#app',
-  data: {
-    items: {
-      [Symbol.iterator]: function* () {
-        yield 'one';
-        yield 'two';
-        yield 'three';
+  data() {
+    return {
+      items: {
+        [Symbol.iterator]: function* () {
+          yield 'one';
+          yield 'two';
+          yield 'three';
+        }
       }
-    }
+    };
   }
 });

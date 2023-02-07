@@ -5,9 +5,11 @@ import Vue from '../../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 new Vue({
   el: '#app',
-  data: {
-    classDynamic1: 'dynamic1',
-    classDynamic2: 'dynamic2'
+  data() {
+    return {
+      classDynamic1: 'dynamic1',
+      classDynamic2: 'dynamic2'
+    };
   },
   methods: {
     clicked() {

@@ -16,8 +16,10 @@ new Vue({
       f2: 113
     }
   },
-  data: {
-    result: []
+  data() {
+    return {
+      result: []
+    };
   },
   methods: {
     keyup: function (event) {

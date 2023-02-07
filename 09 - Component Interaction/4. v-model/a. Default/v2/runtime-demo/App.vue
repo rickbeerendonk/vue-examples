@@ -26,7 +26,7 @@ module.exports = {
   components: {
     Child
   },
-  data: function () {
+  data() {
     return {
       greetingText: 'World'
     };

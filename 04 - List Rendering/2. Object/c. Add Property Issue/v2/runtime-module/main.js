@@ -7,12 +7,14 @@ let itemId = 4;
 
 new Vue({
   el: '#app',
-  data: {
-    obj: {
-      prop1: true,
-      prop2: 'two',
-      prop3: 3
-    }
+  data() {
+    return {
+      obj: {
+        prop1: true,
+        prop2: 'two',
+        prop3: 3
+      }
+    };
   },
   methods: {
     add1() {

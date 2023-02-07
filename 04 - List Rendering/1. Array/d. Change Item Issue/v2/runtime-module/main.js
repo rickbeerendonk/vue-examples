@@ -7,8 +7,10 @@ let itemId = 4;
 
 new Vue({
   el: '#app',
-  data: {
-    items: ['one', 'two', 'three']
+  data() {
+    return {
+      items: ['one', 'two', 'three']
+    };
   },
   methods: {
     overwrite1() {

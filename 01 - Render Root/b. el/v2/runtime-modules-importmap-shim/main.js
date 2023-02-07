@@ -10,7 +10,9 @@ new Vue({
 
 new Vue({
   el: '#app2',
-  data: {
-    greeting: `Hi Vue ${Vue.version}!`
+  data() {
+    return {
+      greeting: `Hi Vue ${Vue.version}!`
+    };
   }
 });

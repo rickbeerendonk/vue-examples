@@ -8,7 +8,9 @@ new Vue({
 }).$mount('#app1'); // <div id="app1"></div>
 
 new Vue({
-  data: {
-    greeting: `Hi Vue ${Vue.version}!`
+  data() {
+    return {
+      greeting: `Hi Vue ${Vue.version}!`
+    };
   }
 }).$mount('#app2'); // <div id="app2">{{ greeting }}</div>

@@ -5,12 +5,14 @@ import Vue from '../../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 new Vue({
   el: '#app',
-  data: {
-    options: [
-      { description: 'Option A', value: 'A' },
-      { description: 'Option B', value: 'B' },
-      { description: 'Option C', value: 'C' }
-    ],
-    selected: 'B'
+  data() {
+    return {
+      options: [
+        { description: 'Option A', value: 'A' },
+        { description: 'Option B', value: 'B' },
+        { description: 'Option C', value: 'C' }
+      ],
+      selected: 'B'
+    };
   }
 });

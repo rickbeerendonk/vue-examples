@@ -5,8 +5,10 @@ import Vue from '../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 const vm = new Vue({
   el: '#app',
-  data: {
-    greeting: 'Hello World!'
+  data() {
+    return {
+      greeting: 'Hello World!'
+    };
   }
 });
 

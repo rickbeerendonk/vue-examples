@@ -15,8 +15,10 @@ new Vue({
   components: {
     GreetingComponent
   },
-  data: {
-    count: 0
+  data() {
+    return {
+      count: 0
+    };
   },
   mounted() {
     setInterval(() => {

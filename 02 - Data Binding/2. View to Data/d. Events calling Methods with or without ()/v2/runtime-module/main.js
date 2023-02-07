@@ -5,9 +5,11 @@ import Vue from '../../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 new Vue({
   el: '#app',
-  data: {
-    clickParams: null,
-    count: 0
+  data() {
+    return {
+      clickParams: null,
+      count: 0
+    };
   },
   methods: {
     clicked(...args) {

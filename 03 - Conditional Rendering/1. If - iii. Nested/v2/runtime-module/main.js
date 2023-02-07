@@ -5,8 +5,10 @@ import Vue from '../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 new Vue({
   el: '#app',
-  data: {
-    show: true,
-    show2: true
+  data() {
+    return {
+      show: true,
+      show2: true
+    };
   }
 });

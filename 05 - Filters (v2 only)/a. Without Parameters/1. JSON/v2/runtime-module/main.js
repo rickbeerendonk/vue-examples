@@ -10,12 +10,14 @@ new Vue({
       return JSON.stringify(value);
     }
   },
-  data: {
-    person: {
-      name: 'Jan Jansen',
-      dob: new Date(1951, 11, 24),
-      retired: true,
-      children: 3
-    }
+  data() {
+    return {
+      person: {
+        name: 'Jan Jansen',
+        dob: new Date(1951, 11, 24),
+        retired: true,
+        children: 3
+      }
+    };
   }
 });

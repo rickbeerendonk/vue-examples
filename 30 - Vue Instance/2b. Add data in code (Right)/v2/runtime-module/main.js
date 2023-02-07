@@ -5,10 +5,12 @@ import Vue from '../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 const vm = new Vue({
   el: '#app',
-  data: {
-    first: 'One',
-    // Uncomment next line to make the second property reactive:
-    second: undefined
+  data() {
+    return {
+      first: 'One',
+      // Uncomment next line to make the second property reactive:
+      second: undefined
+    };
   }
 });
 

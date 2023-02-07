@@ -5,8 +5,10 @@ import Vue from '../../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 new Vue({
   el: '#app',
-  data: {
-    number1: undefined,
-    number2: undefined
+  data() {
+    return {
+      number1: undefined,
+      number2: undefined
+    };
   }
 });

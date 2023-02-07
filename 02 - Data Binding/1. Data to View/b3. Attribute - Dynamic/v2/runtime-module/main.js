@@ -5,8 +5,10 @@ import Vue from '../../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 new Vue({
   el: '#app',
-  data: {
-    dynamicattribute: 'title',
-    name: 'World'
+  data() {
+    return {
+      dynamicattribute: 'title',
+      name: 'World'
+    };
   }
 });

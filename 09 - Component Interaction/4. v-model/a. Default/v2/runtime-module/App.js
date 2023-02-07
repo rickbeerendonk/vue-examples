@@ -10,7 +10,7 @@ export default {
   components: {
     Child
   },
-  data: function () {
+  data() {
     return {
       greetingText: 'World'
     };

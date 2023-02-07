@@ -5,9 +5,11 @@ import Vue from '../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 new Vue({
   el: '#app',
-  data: {
-    count: 0,
-    change: ''
+  data() {
+    return {
+      count: 0,
+      change: ''
+    };
   },
   watch: {
     count: (newValue, oldValue) => {

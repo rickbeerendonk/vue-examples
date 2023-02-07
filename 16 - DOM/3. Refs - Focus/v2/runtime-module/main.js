@@ -5,8 +5,10 @@ import Vue from '../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 new Vue({
   el: '#app',
-  data: {
-    name: 'World'
+  data() {
+    return {
+      name: 'World'
+    };
   },
   mounted() {
     // Use $refs to get direct DOM access

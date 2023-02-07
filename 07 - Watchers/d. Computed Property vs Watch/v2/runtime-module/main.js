@@ -5,10 +5,12 @@ import Vue from '../../../../node_modules/vue_2/dist/vue.esm.browser.js';
 
 new Vue({
   el: '#app',
-  data: {
-    firstName: 'Evan',
-    lastName: 'You',
-    fullNameViaWatch: ''
+  data() {
+    return {
+      firstName: 'Evan',
+      lastName: 'You',
+      fullNameViaWatch: ''
+    };
   },
   computed: {
     fullNameViaComputed() {
