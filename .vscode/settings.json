@@ -2,6 +2,11 @@
 {
   "editor.tabSize": 2,
 
-  "eslint.validate": [{ "language": "vue" }],
+  // Enable ESLint
+  "eslint.enable": true,
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "javascript.validate.enable": false,
+
+  // Disable cSpell
   "cSpell.enabled": false
 }

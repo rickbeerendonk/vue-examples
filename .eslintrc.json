@@ -14,7 +14,7 @@
     }
   },
   "plugins": ["vue", "prettier"],
-  "extends": ["eslint:recommended", "plugin:vue/recommended"],
+  "extends": ["eslint:recommended", "plugin:vue/vue3-recommended", "prettier"],
   "rules": {
     "no-debugger": 1,
     "semi": [2, "always"],
