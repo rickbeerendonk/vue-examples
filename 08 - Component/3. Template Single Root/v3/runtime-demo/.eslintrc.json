@@ -6,10 +6,6 @@
     "commonjs": true
   },
   "parserOptions": {
-    "parser": "@babel/eslint-parser",
-    "parserOptions": {
-      "requireConfigFile": false
-    },
     "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {
@@ -23,7 +19,6 @@
     "semi": [2, "always"],
     "vue/multi-word-component-names": 1,
     "vue/require-prop-types": 1,
-    "vue/valid-template-root": 1,
-    "vue/no-multiple-template-root": 1
+    "vue/valid-template-root": 1
   }
 }
