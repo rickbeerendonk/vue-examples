@@ -14,7 +14,7 @@
   "homepage": "https://github.com/rickbeerendonk/vue-examples#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run validate"
+      "pre-commit2": "npm run validate"
     }
   },
   "scripts": {

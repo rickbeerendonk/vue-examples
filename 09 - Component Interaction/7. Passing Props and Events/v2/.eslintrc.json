@@ -1,0 +1,5 @@
+{
+  "rules": {
+    "vue/no-deprecated-dollar-listeners-api": 0
+  }
+}

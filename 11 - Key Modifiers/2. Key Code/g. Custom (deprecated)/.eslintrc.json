@@ -1,0 +1,5 @@
+{
+  "rules": {
+    "vue/no-deprecated-vue-config-keycodes": 0
+  }
+}

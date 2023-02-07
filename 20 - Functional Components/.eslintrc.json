@@ -1,0 +1,5 @@
+{
+  "rules": {
+    "vue/no-deprecated-functional-template": 0
+  }
+}

@@ -7,6 +7,9 @@
   },
   "parserOptions": {
     "parser": "@babel/eslint-parser",
+    "parserOptions": {
+      "requireConfigFile": false
+    },
     "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {
@@ -19,6 +22,7 @@
     "no-debugger": 1,
     "semi": [2, "always"],
     "prettier/prettier": "error",
+    "vue/multi-word-component-names": 1,
     "vue/require-prop-types": 1
   }
 }
