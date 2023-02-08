@@ -4,7 +4,7 @@
 import {
   mapState,
   mapMutations
-} from '../../../../node_modules/vuex_3/dist/vuex.esm.browser.js';
+} from '../../../../node_modules/vuex/dist/vuex.esm-browser.js';
 
 import { CHANGE, INCREMENT } from './store.js';
 

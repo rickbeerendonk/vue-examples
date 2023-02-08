@@ -5,7 +5,7 @@ import {
   createApp,
   ref,
   watch
-} from '../../../../node_modules/vue_3/dist/vue.esm-browser.js';
+} from '../../../../node_modules/vue/dist/vue.esm-browser.js';
 
 createApp({
   setup() {

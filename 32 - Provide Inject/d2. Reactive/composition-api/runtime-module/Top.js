@@ -4,7 +4,7 @@
 import {
   ref,
   provide
-} from '../../../../node_modules/vue_3/dist/vue.esm-browser.js';
+} from '../../../../node_modules/vue/dist/vue.esm-browser.js';
 
 import Middle from './Middle.js';
 

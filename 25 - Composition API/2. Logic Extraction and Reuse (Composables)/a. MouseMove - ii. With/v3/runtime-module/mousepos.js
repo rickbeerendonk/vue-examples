@@ -5,7 +5,7 @@ import {
   ref,
   onMounted,
   onUnmounted
-} from '../../../../../node_modules/vue_3/dist/vue.esm-browser.js';
+} from '../../../../../node_modules/vue/dist/vue.esm-browser.js';
 
 export default function useMousePosition() {
   const x = ref(0);

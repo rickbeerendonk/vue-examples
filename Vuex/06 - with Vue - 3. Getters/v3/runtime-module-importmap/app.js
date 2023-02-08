@@ -1,7 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-import { mapGetters } from '../../../../node_modules/vuex_3/dist/vuex.esm.browser.js';
+import { mapGetters } from '../../../../node_modules/vuex/dist/vuex.esm-browser.js';
 
 export default {
   name: 'App',

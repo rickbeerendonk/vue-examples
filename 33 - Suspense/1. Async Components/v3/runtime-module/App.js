@@ -1,7 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-import { defineAsyncComponent } from '../../../../node_modules/vue_3/dist/vue.esm-browser.js';
+import { defineAsyncComponent } from '../../../../node_modules/vue/dist/vue.esm-browser.js';
 
 const Greeting = defineAsyncComponent(() => import('./Greeting.js'));
 
