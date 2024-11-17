@@ -1,0 +1,26 @@
+<!doctype html>
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2024 Rick Beerendonk -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rick Beerendonk" />
+
+    <title>Data Binding - Data to View - Attribute - Same name</title>
+    <link rel="stylesheet" href="../../../../../resources/oblicum.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1 :title>Hello {{title}}!</h1>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+        }
+      }
+    </script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
