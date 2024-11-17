@@ -6,9 +6,11 @@ function formatUrl(url) {
   const protocolEndIndex = url.indexOf('//') + 2;
   const pathStartIndex = url.indexOf('/', protocolEndIndex);
 
-  // Find the end of the relevant part, marked by '/esbuild'
-  const endPath = '/esbuild';
-  const pathEndIndex = url.indexOf(endPath, pathStartIndex);
+  // Find the end of the relevant part
+  let pathEndIndex = url.indexOf('/esbuild', pathStartIndex);
+  if (pathEndIndex === -1) {
+    pathEndIndex = url.indexOf('/runtime', pathStartIndex);
+  }
 
   // Extract, decode, and format the relevant part of the URL
   let relevantPart = url.slice(pathStartIndex + 1, pathEndIndex);

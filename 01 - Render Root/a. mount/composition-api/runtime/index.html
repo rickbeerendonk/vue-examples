@@ -7,13 +7,20 @@
     <meta name="author" content="Rick Beerendonk" />
 
     <title>Render Root - Mount</title>
+    <script src="../../../../utils/document-title.js"></script>
     <link rel="stylesheet" href="../../../../resources/oblicum.css" />
-    <link rel="stylesheet" href="../../../../resources/oblicum-vue3.css" />
   </head>
   <body>
     <div id="app1"></div>
     <div id="app2">{{ greeting }}</div>
 
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "../../../../node_modules/vue/dist/vue.esm-browser.js"
+        }
+      }
+    </script>
     <script type="module" src="main.js"></script>
   </body>
 </html>

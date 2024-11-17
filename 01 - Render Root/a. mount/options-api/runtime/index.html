@@ -7,26 +7,20 @@
     <meta name="author" content="Rick Beerendonk" />
 
     <title>Render Root - Mount</title>
+    <script src="../../../../utils/document-title.js"></script>
     <link rel="stylesheet" href="../../../../resources/oblicum.css" />
-    <link rel="stylesheet" href="../../../../resources/oblicum-vue3.css" />
   </head>
   <body>
     <div id="app1"></div>
     <div id="app2">{{ greeting }}</div>
 
-    <script
-      defer
-      src="../../../../node_modules/es-module-shims/dist/es-module-shims.js"
-    ></script>
-    <!-- Without shim: <script type="importmap"> -->
-    <script type="importmap-shim">
+    <script type="importmap">
       {
         "imports": {
           "vue": "../../../../node_modules/vue/dist/vue.esm-browser.js"
         }
       }
     </script>
-    <!-- Without shim: <script type="module" src="main.js"> -->
-    <script type="module-shim" src="main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
