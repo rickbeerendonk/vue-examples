@@ -5,10 +5,10 @@ import { createApp } from '../../../../../node_modules/vue/dist/vue.esm-browser.
 
 createApp({
   setup() {
-    const clicked = e => {
+    function clicked(e) {
       alert(`Event handled.
       Target: ${e.target}`);
-    };
+    }
 
     return { clicked };
   }
