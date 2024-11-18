@@ -17,9 +17,9 @@ defineProps({
 // eslint-disable-next-line no-undef
 const emit = defineEmits(['change']);
 
-const changed = e => {
+function changed(e) {
   emit('change', e.target.value);
-};
+}
 </script>
 
 <style scoped></style>
