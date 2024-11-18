@@ -6,13 +6,19 @@
     <meta charset="utf-8" />
     <meta name="author" content="Rick Beerendonk" />
 
-    <title>Recursive Components - Unconditional</title>
+    <script src="../../../../../utils/document-title.js"></script>
     <link rel="stylesheet" href="../../../../resources/oblicum.css" />
   </head>
   <body>
-    <p style="color: gray">See console for error.</p>
     <div id="app"></div>
 
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "../../../../../node_modules/vue/dist/vue.esm-browser.js"
+        }
+      }
+    </script>
     <script type="module" src="main.js"></script>
   </body>
 </html>
