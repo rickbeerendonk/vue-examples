@@ -8,7 +8,7 @@ Within Vue template databinding you can use expression, but there are limitation
   ```js
   'hello '.toUpperCase() + 2020;
   ```
-- Globals from [this list](https://github.com/vuejs/vue/blob/v2.6.12/src/core/instance/proxy.js#L9-L14) (v3 [list](https://github.com/vuejs/vue-next/blob/master/packages/shared/src/globalsWhitelist.ts#L3-L6)):
+- Globals from [this list](https://github.com/vuejs/core/blob/main/packages/shared/src/globalsAllowList.ts):
   - Infinity
   - undefined
   - NaN
@@ -32,7 +32,10 @@ Within Vue template databinding you can use expression, but there are limitation
   - Set
   - JSON
   - Intl
-  - require (for Webpack/Browserify)
+  - BigInt
+  - console
+  - Error
+  - Symbol
 
 [Wikipedia:](<https://en.wikipedia.org/wiki/Expression_(computer*science)>) An expression in a programming language is a combination of one or more constants, variables, operators, and functions that the programming language interprets and computes to produce ("to return") another value.
 

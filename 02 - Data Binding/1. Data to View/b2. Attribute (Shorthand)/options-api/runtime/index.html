@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2024 Rick Beerendonk -->
+<!-- Copyright © 2018 Rick Beerendonk -->
 <html>
   <head>
     <meta charset="utf-8" />
@@ -11,13 +11,13 @@
   </head>
   <body>
     <div id="app">
-      <h1 :title>Hello {{title}}!</h1>
+      <h1 :title="name">Hello {{name}}!</h1>
     </div>
 
     <script type="importmap">
       {
         "imports": {
-          "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+          "vue": "../../../../../node_modules/vue/dist/vue.esm-browser.js"
         }
       }
     </script>
