@@ -9,9 +9,9 @@ import {
 createApp({
   setup() {
     const isDynamic = ref(false);
-    const clicked = () => {
+    function clicked() {
       isDynamic.value = !isDynamic.value;
-    };
+    }
 
     return { isDynamic, clicked };
   }

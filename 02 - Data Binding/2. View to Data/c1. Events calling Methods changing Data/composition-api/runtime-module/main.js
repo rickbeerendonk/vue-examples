@@ -9,9 +9,9 @@ import {
 createApp({
   setup() {
     const count = ref(0);
-    const clicked = () => {
+    function clicked() {
       count.value++;
-    };
+    }
 
     return { count, clicked };
   }

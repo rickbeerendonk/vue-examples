@@ -11,10 +11,10 @@ createApp({
     const classDynamic1 = ref('dynamic1');
     const classDynamic2 = ref('dynamic2');
 
-    const clicked = () => {
+    function clicked() {
       classDynamic1.value = classDynamic1.value ? '' : 'dynamic1';
       classDynamic2.value = classDynamic2.value ? '' : 'dynamic2';
-    };
+    }
 
     return { classDynamic1, classDynamic2, clicked };
   }
