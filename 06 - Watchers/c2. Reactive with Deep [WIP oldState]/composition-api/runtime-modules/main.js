@@ -1,11 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2021 Rick Beerendonk          !*/
 
-import {
-  createApp,
-  reactive,
-  watch
-} from '../../../../node_modules/vue/dist/vue.esm-browser.js';
+import { createApp, reactive, watch } from 'vue';
 
 createApp({
   setup() {
