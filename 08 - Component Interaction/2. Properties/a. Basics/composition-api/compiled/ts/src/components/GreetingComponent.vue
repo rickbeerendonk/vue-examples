@@ -2,6 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk          -->
 
 <!-- eslint-disable @typescript-eslint/no-explicit-any -->
+<!-- eslint-disable vue/valid-define-props -->
 
 <script setup lang="ts">
 interface Props {
