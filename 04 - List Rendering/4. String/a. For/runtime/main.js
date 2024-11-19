@@ -1,6 +1,6 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-import * as Vue from '../../../../../node_modules/vue/dist/vue.esm-browser.js';
+import { createApp } from 'vue';
 
-Vue.createApp({}).mount('#app');
+createApp({}).mount('#app');
