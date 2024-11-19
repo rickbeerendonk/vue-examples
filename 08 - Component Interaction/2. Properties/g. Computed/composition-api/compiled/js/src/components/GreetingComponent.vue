@@ -3,12 +3,12 @@
 
 <script setup>
 defineProps({
-  name: String
+  yourName: String
 });
 </script>
 
 <template>
-  <h1>Hello {{ name }}!</h1>
+  <h1>Hello {{ yourName }}!</h1>
 </template>
 
 <style scoped></style>

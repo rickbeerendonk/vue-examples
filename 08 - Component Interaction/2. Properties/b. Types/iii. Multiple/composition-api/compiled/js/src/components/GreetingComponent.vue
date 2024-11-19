@@ -2,7 +2,6 @@
 <!-- Copyright © 2020 Rick Beerendonk          -->
 
 <script setup>
-// defineProps is a compiler micro (no need to import)
 defineProps({
   name: [String, Number]
 });
