@@ -3,6 +3,7 @@
 
 /* global process */
 /* eslint-disable no-console */
+/* eslint-disable @typescript-eslint/no-require-imports */
 
 const childProcess = require('child_process');
 var http = require('http');
