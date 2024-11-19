@@ -2,8 +2,7 @@
 <!-- Copyright © 2020 Rick Beerendonk          -->
 
 <script setup>
-import { defineProps } from 'vue';
-
+// defineProps is a compiler micro (no need to import)
 defineProps({
   name
 });

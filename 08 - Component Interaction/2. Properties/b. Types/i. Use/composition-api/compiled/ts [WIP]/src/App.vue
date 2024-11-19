@@ -2,14 +2,12 @@
 <!-- Copyright © 2020 Rick Beerendonk          -->
 
 <script setup>
-// defineProps is a compiler micro (no need to import)
-defineProps({
-  name: String
-});
+import GreetingComponent from './components/GreetingComponent.vue';
 </script>
 
 <template>
-  <h1>Hello {{ name }}!</h1>
+  <h1>App</h1>
+  <GreetingComponent name="World" />
 </template>
 
 <style scoped></style>

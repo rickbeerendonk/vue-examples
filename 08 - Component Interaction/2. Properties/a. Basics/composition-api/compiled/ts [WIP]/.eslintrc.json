@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "extraFileExtensions": [".vue"]
+  },
+  "plugins": ["vue", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "no-debugger": 1,
+    "semi": [2, "always"],
+    "prettier/prettier": "error",
+    "vue/multi-word-component-names": 1,
+    "vue/require-prop-types": 1,
+    "vue/valid-define-props": 1
+  }
+}
