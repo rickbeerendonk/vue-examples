@@ -2,9 +2,11 @@
 <!-- Copyright © 2020 Rick Beerendonk          -->
 
 <script setup>
-defineProps({
+const props = defineProps({
   name: String
 });
+
+console.log(props.name);
 </script>
 
 <template>

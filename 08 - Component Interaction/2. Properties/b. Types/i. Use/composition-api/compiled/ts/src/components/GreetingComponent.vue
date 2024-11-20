@@ -9,7 +9,9 @@ interface Props {
 }
 
 // defineProps is a compiler micro (no need to import)
-defineProps<Props>();
+const props = defineProps<Props>();
+
+console.log(props.name);
 </script>
 
 <template>

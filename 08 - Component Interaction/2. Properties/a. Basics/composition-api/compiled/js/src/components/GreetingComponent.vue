@@ -3,9 +3,11 @@
 
 <script setup>
 // defineProps is a compiler micro (no need to import)
-defineProps({
+const props = defineProps({
   name
 });
+
+console.log(props.name);
 </script>
 
 <template>
