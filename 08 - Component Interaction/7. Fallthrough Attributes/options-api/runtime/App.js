@@ -3,8 +3,6 @@
 
 import ImportantAnchor from './ImportantAnchor.js';
 
-/* eslint vue/require-prop-types: "off" */
-
 export default {
   name: 'App',
   components: {
