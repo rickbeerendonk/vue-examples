@@ -1,4 +1,6 @@
-# \$refs
+# Options API
+
+## \$refs
 
 \$refs are:
 
