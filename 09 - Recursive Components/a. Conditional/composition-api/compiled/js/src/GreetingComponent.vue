@@ -9,7 +9,7 @@ const recursive = ref(false);
 
 <template>
   <button :disabled="recursive" @click="recursive = true">Hello World!</button>
-  <greeting-component v-if="recursive" />
+  <GreetingComponent v-if="recursive" />
 </template>
 
 <style scoped></style>

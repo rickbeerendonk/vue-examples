@@ -5,7 +5,7 @@
 
 <template>
   <h1>Hello World!</h1>
-  <greeting-component />
+  <GreetingComponent />
 </template>
 
 <style scoped></style>
