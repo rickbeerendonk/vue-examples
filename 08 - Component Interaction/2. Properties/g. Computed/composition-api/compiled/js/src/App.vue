@@ -7,7 +7,7 @@ import GreetingComponent from './components/GreetingComponent.vue';
 
 <template>
   <h1>App</h1>
-  <GreetingComponent your-name="World" />
+  <GreetingComponent name="World" />
 </template>
 
 <style scoped></style>
