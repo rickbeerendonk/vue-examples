@@ -6,7 +6,7 @@ import ContainerComponent from './ContainerComponent.vue';
 </script>
 
 <template>
-  <container-component>
+  <ContainerComponent>
     <!-- v-slot:default -->
     <u>Default</u>
 
@@ -17,7 +17,7 @@ import ContainerComponent from './ContainerComponent.vue';
     <template v-slot:second>
       <b>Second</b>
     </template>
-  </container-component>
+  </ContainerComponent>
 </template>
 
 <style scoped></style>
