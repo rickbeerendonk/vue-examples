@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from 'vue-router';
 
 <template>
   <header>
-    <h1>Router - Lazy Loading</h1>
+    <h1>Router</h1>
     <nav>
       <RouterLink :to="{ name: 'index' }">Home</RouterLink>
       <RouterLink :to="{ name: 'first' }">Page 1</RouterLink>
