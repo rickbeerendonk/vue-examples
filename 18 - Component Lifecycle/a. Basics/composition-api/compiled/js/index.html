@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2024 Rick Beerendonk -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      th {
+        text-align: left;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lifecycle Hooks</h1>
+    <ol id="events"></ol>
+    <table id="result">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Hook</th>
+          <th>props</th>
+          <th>data</th>
+          <th>DOM</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
