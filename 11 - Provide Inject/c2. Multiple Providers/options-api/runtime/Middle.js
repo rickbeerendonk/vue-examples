@@ -10,7 +10,7 @@ export default {
   },
   provide() {
     return {
-      color: 'Blue'
+      color: 'blue'
     };
   },
   template: '<Bottom />'
