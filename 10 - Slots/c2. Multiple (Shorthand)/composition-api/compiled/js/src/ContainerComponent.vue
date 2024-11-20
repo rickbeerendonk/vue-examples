@@ -7,7 +7,7 @@
   <div class="outer">
     The default item:
     <div class="inner">
-      <slot></slot>
+      <slot />
       <slot name="default" />
     </div>
     The 1st item:

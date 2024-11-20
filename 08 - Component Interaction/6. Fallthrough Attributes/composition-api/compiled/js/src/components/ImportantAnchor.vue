@@ -9,11 +9,11 @@ console.log(JSON.stringify(attrs));
 </script>
 
 <template>
-  <a>!!! <slot></slot> !!!</a>
+  <a>!!! <slot /> !!!</a>
 
   <!-- See effect when having 2 items -->
   <!--
-  <a v-bind="attrs">!!! <slot></slot> !!!</a>
+  <a v-bind="attrs">!!! <slot /> !!!</a>
   -->
 </template>
 
