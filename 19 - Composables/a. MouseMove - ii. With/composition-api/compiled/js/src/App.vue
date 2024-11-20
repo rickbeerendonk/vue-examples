@@ -2,7 +2,7 @@
 <!-- Copyright © 2018 Rick Beerendonk          -->
 
 <script setup>
-import { useMouseMove } from './composables/useMouseMove';
+import { useMouseMove } from './composables/useMouseMove.js';
 
 const mousePosition = useMouseMove();
 </script>
