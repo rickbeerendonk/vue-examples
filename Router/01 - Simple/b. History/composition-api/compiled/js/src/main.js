@@ -1,15 +1,14 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-import * as Vue from 'vue';
+import './assets/main.css';
 
-import router from './router/';
-
+import { createApp } from 'vue';
 import App from './App.vue';
+import router from './router';
 
-const app = Vue.createApp(App);
+const app = createApp(App);
 
-// Install router plugin
 app.use(router);
 
 app.mount('#app');
