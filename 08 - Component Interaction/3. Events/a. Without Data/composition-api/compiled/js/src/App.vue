@@ -6,9 +6,9 @@ import { ref } from 'vue';
 import ChildComponent from './components/ChildComponent.vue';
 
 const count = ref(0);
-const childChanged = () => {
+function childChanged() {
   count.value++;
-};
+}
 </script>
 
 <template>
