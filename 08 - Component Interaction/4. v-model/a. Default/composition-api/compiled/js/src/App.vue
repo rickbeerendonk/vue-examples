@@ -20,8 +20,8 @@ const greetingText = ref('World');
 
   <!-- Long -->
   <ChildComponent
-    v-bind:modelValue="greetingText"
-    v-on:update:modelValue="greetingText = $event"
+    :modelValue="greetingText"
+    @update:modelValue="greetingText = $event"
   />
 </template>
 
