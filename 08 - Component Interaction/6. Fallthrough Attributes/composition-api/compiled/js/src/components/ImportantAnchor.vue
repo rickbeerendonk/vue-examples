@@ -10,6 +10,11 @@ console.log(JSON.stringify(attrs));
 
 <template>
   <a>!!! <slot></slot> !!!</a>
+
+  <!-- See effect when having 2 items -->
+  <!--
+  <a v-bind="attrs">!!! <slot></slot> !!!</a>
+  -->
 </template>
 
 <style scoped></style>
