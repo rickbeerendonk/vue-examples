@@ -1,5 +1,5 @@
 <!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2024 Rick Beerendonk          -->
+<!-- Copyright © 2021 Rick Beerendonk          -->
 
 <script setup>
 import { ref } from 'vue';
@@ -14,14 +14,14 @@ const greetingText = ref('World');
   <hr />
 
   <!-- Short -->
-  <ChildComponent v-model:custom-name="greetingText" />
+  <ChildComponent v-model="greetingText" />
 
   <hr />
 
   <!-- Long -->
   <ChildComponent
-    :custom-name="greetingText"
-    @update:custom-name="greetingText = $event"
+    v-bind:modelValue="greetingText"
+    v-on:update:modelValue="greetingText = $event"
   />
 </template>
 
