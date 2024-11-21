@@ -14,7 +14,7 @@ function handleSubmit(e) {
 <template>
   <form @submit="handleSubmit">
     <p>Page loaded at: {{ date.toLocaleTimeString() }}</p>
-    <button>Submit</button>
+    <button type="submit">Submit</button>
   </form>
 </template>
 
