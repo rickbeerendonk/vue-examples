@@ -68,7 +68,7 @@
   "dependencies": {
     "es-module-shims": "1.10.1",
     "http-vue-loader": "1.4.2",
-    "pinia": "2.2.6",
+    "pinia": "^2.2.6",
     "serve": "14.2.4",
     "vue": "3.5.13",
     "vue-demi": "0.14.10",
