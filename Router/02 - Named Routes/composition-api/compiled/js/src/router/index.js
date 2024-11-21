@@ -16,5 +16,11 @@ const router = createRouter({
     { path: '/page2', name: 'second', component: Page2View }
   ]
 });
+/* 
+router.beforeEach((to, from, next) => {
+  document.title = to.name;
+  next();
+});
+*/
 
 export default router;
