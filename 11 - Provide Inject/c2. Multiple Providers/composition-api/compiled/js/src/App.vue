@@ -7,7 +7,7 @@ import TopComponent from './components/TopComponent.vue';
 </script>
 
 <template>
-  <h1>Top</h1>
+  <h1>App</h1>
   <TopComponent />
   <BottomComponent />
 </template>
