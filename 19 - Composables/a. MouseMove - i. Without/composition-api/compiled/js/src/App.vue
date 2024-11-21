@@ -2,7 +2,7 @@
 <!-- Copyright © 2018 Rick Beerendonk          -->
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const mousePosition = ref({ x: undefined, y: undefined });
 
@@ -14,7 +14,7 @@ onMounted(() => {
   document.addEventListener('mousemove', handleMouseMove);
 });
 
-onUnmounted(() => {
+onBeforeUnmount(() => {
   document.removeEventListener('mousemove', handleMouseMove);
 });
 </script>

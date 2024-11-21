@@ -1,7 +1,7 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2020 Rick Beerendonk          !*/
 
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 export function useMouseMove() {
   const mousePosition = ref({ x: undefined, y: undefined });
@@ -14,7 +14,7 @@ export function useMouseMove() {
     document.addEventListener('mousemove', handleMouseMove);
   });
 
-  onUnmounted(() => {
+  onBeforeUnmount(() => {
     document.removeEventListener('mousemove', handleMouseMove);
   });
 
