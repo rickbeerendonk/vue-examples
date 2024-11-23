@@ -4,10 +4,10 @@
 import { createApp, version } from 'vue';
 
 const app = createApp({
-  setup() {
-    const greeting = `Vue ${version}!`;
-    return { greeting };
-  },
-  template: `{{ greeting }}`
+  data() {
+    return {
+      greeting: `Vue ${version}!`
+    };
+  }
 });
 app.mount('#app');

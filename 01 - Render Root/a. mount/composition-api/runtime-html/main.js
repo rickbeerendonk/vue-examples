@@ -7,7 +7,6 @@ const app = createApp({
   setup() {
     const greeting = `Vue ${version}!`;
     return { greeting };
-  },
-  template: `{{ greeting }}`
+  }
 });
 app.mount('#app');

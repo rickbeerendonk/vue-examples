@@ -1,9 +1,9 @@
 // European Union Public License version 1.2
 // Copyright © 2024 Rick Beerendonk
 
-import { createApp, version } from 'vue';
+import { createApp } from 'vue';
 
-const app = createApp({
-  template: `Template: Vue ${version}!`
-});
+import App from './App.vue';
+
+const app = createApp(App);
 app.mount('#app');
