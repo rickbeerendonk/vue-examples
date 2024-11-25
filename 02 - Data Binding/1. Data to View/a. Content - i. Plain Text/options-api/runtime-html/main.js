@@ -8,6 +8,5 @@ Vue.createApp({
     return {
       greeting: 'Hello Vue!'
     };
-  },
-  template: `<span v-text="greeting"></span>` // v-text directive
+  }
 }).mount('#app');
