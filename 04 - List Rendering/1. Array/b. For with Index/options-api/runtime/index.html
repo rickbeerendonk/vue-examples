@@ -12,7 +12,6 @@
   <body>
     <div id="app">
       <ol>
-        <!-- REMARK: In v3 setting the value to 0 using v-bind doesn't work! -->
         <li v-for="(item, index) in items" :value="index">
           {{ index }} {{ item }}
         </li>
