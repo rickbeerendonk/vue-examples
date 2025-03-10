@@ -3,6 +3,8 @@
 
 <script setup>
 import { version } from 'vue';
+
+const greeting = `Vue ${version}!`;
 </script>
 
-<template>Template: Vue {{ version }}!</template>
+<template>{{ greeting }}</template>
