@@ -1,9 +1,9 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2021 Rick Beerendonk          !*/
 
-import * as Vue from '../../../../node_modules/vue/dist/vue.esm-browser.js';
+import { createApp } from 'vue';
 
-const app = Vue.createApp({
+const app = createApp({
   data() {
     return {
       show: false

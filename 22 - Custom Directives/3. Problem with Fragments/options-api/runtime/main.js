@@ -1,12 +1,12 @@
 /*! European Union Public License version 1.2 !*/
 /*! Copyright © 2021 Rick Beerendonk          !*/
 
-import * as Vue from '../../../../node_modules/vue/dist/vue.esm-browser.js';
+import { createApp } from 'vue';
 
 import ComponentWithFragment from './ComponentWithFragment.js';
 import ComponentWithOneRoot from './ComponentWithOneRoot.js';
 
-const app = Vue.createApp({
+const app = createApp({
   components: {
     ComponentWithFragment,
     ComponentWithOneRoot
