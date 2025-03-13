@@ -18,8 +18,8 @@ createApp({
       return 'high';
     });
 
-    watch(count, newValue => {
-      change.value = `Changed to ${newValue} (${countText.value})`;
+    watch([count, countText], newValues => {
+      change.value = `Changed to ${newValues[0]} (${newValues[1]})`;
     });
 
     return {
