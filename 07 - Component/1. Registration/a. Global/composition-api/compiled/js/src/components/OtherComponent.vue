@@ -6,7 +6,7 @@
 <template>
   <div>
     <h1>Other</h1>
-    <greeting-component />
+    <GreetingComponent />
   </div>
 </template>
 
