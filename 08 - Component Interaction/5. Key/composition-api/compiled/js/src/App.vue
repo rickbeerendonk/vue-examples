@@ -1,17 +1,13 @@
-<!-- European Union Public License version 1.2 -->
-<!-- Copyright © 2021 Rick Beerendonk          -->
-
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import ClickMe from './components/ClickMe.vue';
 
 const id = ref(0);
+const keys = computed(() => [id.value, id.value + 1]);
 </script>
 
 <template>
   <button @click="id++">Change ID</button>
   <br />
-  <ClickMe :key="id" />
+  <ClickMe v-for="key in keys" :key="key" />
 </template>
-
-<style scoped></style>
