@@ -10,7 +10,6 @@ import TabContainer from './TabContainer.vue';
     <template #first>
       <em>First</em>
     </template>
-
     <template #second>
       <b>Second</b>
     </template>
