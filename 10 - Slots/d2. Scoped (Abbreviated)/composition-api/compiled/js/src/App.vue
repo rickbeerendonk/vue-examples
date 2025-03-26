@@ -6,8 +6,14 @@ import ContainerComponent from './ContainerComponent.vue';
 </script>
 
 <template>
+  <!-- Long -->
   <ContainerComponent>
     <template #default="slotProps">{{ slotProps.source }}</template>
+  </ContainerComponent>
+
+  <!-- Short (Abbreviated) -->
+  <ContainerComponent #default="slotProps">
+    {{ slotProps.source }}
   </ContainerComponent>
 </template>
 
