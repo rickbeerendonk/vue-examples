@@ -5,32 +5,26 @@ import { createApp, ref } from 'vue';
 
 const app = createApp({
   setup() {
-    const checked = ref('');
-    const a = ref('AAA');
-    const b = ref('BBB');
-    const c = ref('CCC');
+    const checkedAsNumber = ref(undefined);
 
     return {
-      checked,
-      a,
-      b,
-      c
+      checkedAsNumber
     };
   },
   template: `
     <label>
-      <input type="radio" v-model="checked" v-bind:value="a" />
+      <input type="radio" v-model="checkedAsNumber" :value="1" />
       A
     </label>
     <label>
-      <input type="radio" v-model="checked" v-bind:value="b" />
+      <input type="radio" v-model="checkedAsNumber" :value="2" />
       B
     </label>
     <label>
-      <input type="radio" v-model="checked" v-bind:value="c" />
+      <input type="radio" v-model="checkedAsNumber" :value="3" />
       C
     </label>
-    <h1>{{checked}}</h1>
+    <h1>{{checkedAsNumber}}</h1>
   `
 });
 

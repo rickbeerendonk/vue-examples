@@ -5,22 +5,19 @@ import { createApp, ref } from 'vue';
 
 const app = createApp({
   setup() {
-    const option1 = ref('Hello');
-    const option2 = ref('Bye');
-    const selected = ref('');
+    const selectedAsNumber = ref(undefined);
 
     return {
-      option1,
-      option2,
-      selected
+      selectedAsNumber
     };
   },
   template: `
-    <select v-model="selected">
-      <option v-bind:value="option1">A</option>
-      <option v-bind:value="option2">B</option>
+    <select v-model="selectedAsNumber">
+      <option :value="1">A</option>
+      <option :value="2">B</option>
+      <option :value="3">C</option>
     </select>
-    <h1>{{ selected }}</h1>
+    <h1>{{ selectedAsNumber }}</h1>
   `
 });
 
