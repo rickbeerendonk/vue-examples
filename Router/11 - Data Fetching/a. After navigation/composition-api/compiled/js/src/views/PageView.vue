@@ -10,7 +10,7 @@ const post = ref(null);
 const error = ref(null);
 const route = useRoute();
 
-const fetchData = async () => {
+async function fetchData() {
   if (!route.params.id) {
     return;
   }
@@ -31,17 +31,19 @@ const fetchData = async () => {
   } finally {
     loading.value = false;
   }
-};
+}
 
+// Initial load
 onMounted(fetchData);
 
+// Subsequent loads
 watch(route, fetchData);
 </script>
 
 <template>
   <div>
     <div v-if="loading">Loading...</div>
-    <div v-else-if="error">{{ error }}</div>
+    <div v-else-if="error" style="color: red">{{ error }}</div>
     <div v-else>{{ post }}</div>
   </div>
 </template>
