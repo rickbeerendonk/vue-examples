@@ -15,12 +15,15 @@ watch(name, () => {
     // Show component (but keep alive)
     setTimeout(() => {
       currentComponent.value = HelloComponent;
-    }, 100);
-  }, 100);
+    }, 200);
+  }, 200);
 });
 
 onMounted(() => {
-  name.value = 'B';
+  setTimeout(() => {
+    // Change name
+    name.value = 'B';
+  }, 100);
 });
 </script>
 
