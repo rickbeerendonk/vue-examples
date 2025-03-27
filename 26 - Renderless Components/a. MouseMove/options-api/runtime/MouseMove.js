@@ -19,7 +19,6 @@ export default {
   mounted() {
     document.addEventListener('mousemove', this.handleMouseMove);
   },
-  // destroyed (Vue 2):
   unmounted() {
     document.removeEventListener('mousemove', this.handleMouseMove);
   },
