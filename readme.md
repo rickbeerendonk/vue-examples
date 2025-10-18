@@ -23,11 +23,11 @@ Install dependencies first, then run:
 
 ## Developer Tools
 
-Download: https://github.com/vuejs/vue-devtools
+Download: https://devtools.vuejs.org/
 
 ### Visual Studio Code
 
-Plugin: https://marketplace.visualstudio.com/items?itemName=octref.vetur
+Vue Language Features (Volar): https://marketplace.visualstudio.com/items?itemName=Vue.volar
 
 ## Licence
 
