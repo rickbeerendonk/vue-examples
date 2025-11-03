@@ -12,7 +12,11 @@
   <body>
     <div id="app">
       <input type="number" v-model="count" />
-      <p>{{ change }}</p>
+      <ul>
+        <li><u>watch:</u> {{ watchChange }}</li>
+        <li><u>watchEffect:</u> {{ watchEffectChange }}</li>
+        <li><u>watchPostEffect:</u> {{ watchPostEffectChange }}</li>
+      </ul>
     </div>
 
     <script type="importmap">
