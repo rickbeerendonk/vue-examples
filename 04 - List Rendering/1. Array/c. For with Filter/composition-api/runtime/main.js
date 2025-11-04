@@ -6,8 +6,8 @@ import { createApp, ref } from 'vue';
 createApp({
   setup() {
     const items = ref(['one', 'two', 'three', 'four', 'five', 'six']);
-    const short = (arr, itemLength = 3) =>
-      arr.filter(val => val.length <= itemLength);
+    const short = (arr, maxItemLength = 3) =>
+      arr.filter(val => val.length <= maxItemLength);
 
     return { items, short };
   }
