@@ -6,6 +6,7 @@ import { createApp, ref, watch, watchEffect, watchPostEffect } from 'vue';
 createApp({
   setup() {
     const count = ref(0);
+    const count2 = ref(0);
     const watchChange = ref('');
     const watchEffectChange = ref('');
     const watchPostEffectChange = ref('');
@@ -46,6 +47,12 @@ createApp({
       console.log(`watchPostEffect: ${watchPostEffectChange.value}`);
     });
 
-    return { count, watchChange, watchEffectChange, watchPostEffectChange };
+    return {
+      count,
+      count2,
+      watchChange,
+      watchEffectChange,
+      watchPostEffectChange
+    };
   }
 }).mount('#app');
