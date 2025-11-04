@@ -1,0 +1,28 @@
+{
+  "name": "ts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "start": "vite --open",
+    "type-check": "vue-tsc --build --force"
+  },
+  "dependencies": {
+    "vue": "^3"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.9.0",
+    "@vitejs/plugin-vue": "^6",
+    "@vue/tsconfig": "^0.5.1",
+    "npm-run-all2": "^7.0.1",
+    "typescript": "~5.6.3",
+    "vite": "^7",
+    "vite-plugin-vue-devtools": "^8",
+    "vue-tsc": "^2.1.10"
+  }
+}
