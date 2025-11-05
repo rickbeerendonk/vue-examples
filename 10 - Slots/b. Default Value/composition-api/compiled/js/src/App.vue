@@ -6,7 +6,7 @@ import ContainerComponent from './ContainerComponent.vue';
 </script>
 
 <template>
-  <ContainerComponent> </ContainerComponent>
+  <ContainerComponent></ContainerComponent>
 </template>
 
 <style scoped></style>
