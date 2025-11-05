@@ -24,7 +24,7 @@ const app = createApp({
     };
   },
   template: `
-    <div id="parent" @click.capture="parentCapturingClicked">
+    <div id="parent" @click.capture.once="parentCapturingClicked">
       Parent
       <div id="child" @click="childClicked">Child</div>
     </div>
