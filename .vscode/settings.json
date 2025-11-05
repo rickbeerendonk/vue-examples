@@ -7,6 +7,8 @@
   "eslint.workingDirectories": [{ "mode": "auto" }],
   "javascript.validate.enable": false,
 
-  // Disable cSpell
-  "cSpell.enabled": false
+  // Prevent PowerShell or other terminals from being the default terminal
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.linux": "bash"
 }
