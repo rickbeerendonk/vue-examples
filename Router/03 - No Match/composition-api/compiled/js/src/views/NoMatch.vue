@@ -6,6 +6,7 @@
 <template>
   <h2>No Match</h2>
   <p>pathMatch: {{ $route.params.pathMatch }}</p>
+  <p>href: {{ $route.href }}</p>
 </template>
 
 <style scoped></style>
