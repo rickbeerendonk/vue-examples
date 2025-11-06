@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- European Union Public License version 1.2 -->
+<!-- Copyright © 2025 Rick Beerendonk -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rick Beerendonk" />
+
+    <title>Pinia - Plugins - Logger</title>
+    <link rel="stylesheet" href="../../../../resources/oblicum.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="log"></div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "birpc": "../../../../node_modules/birpc/dist/index.mjs",
+          "hookable": "../../../../node_modules/hookable/dist/index.mjs",
+          "perfect-debounce": "../../../../node_modules/perfect-debounce/dist/index.mjs",
+          "pinia": "../../../../node_modules/pinia/dist/pinia.esm-browser.js",
+          "vue": "../../../../node_modules/vue/dist/vue.esm-browser.js",
+          "vue-demi": "../../../../node_modules/pinia/node_modules/vue-demi/lib/index.mjs",
+          "@vue/devtools-api": "../../../../node_modules/@vue/devtools-api/dist/index.js",
+          "@vue/devtools-kit": "../../../../node_modules/@vue/devtools-kit/dist/index.js",
+          "@vue/devtools-shared": "../../../../node_modules/@vue/devtools-shared/dist/index.js"
+        }
+      }
+    </script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
