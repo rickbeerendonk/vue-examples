@@ -4,12 +4,11 @@
 <script setup lang="ts">
 import GreetingEditorInput from './components/GreetingEditorInput.vue';
 import GreetingEditorText from './components/GreetingEditorText.vue';
-
-// These components are rendered OUTSIDE of GreetingEditor
-// This will cause an error to be thrown
 </script>
 
 <template>
+  <!-- These components are rendered OUTSIDE of GreetingEditor -->
+  <!-- This will cause an error to be thrown -->
   <GreetingEditorText />
   <GreetingEditorInput />
 </template>
